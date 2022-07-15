@@ -15,6 +15,8 @@ language_info:
   name: python
   nbconvert_exporter: python
   pygments_lexer: ipython3
+nbhosting:
+  title: intro
 ---
 
 # introduction
@@ -35,7 +37,7 @@ nous verrons pour commencer comment installer notre pile logicielle, à savoir e
 * **Jupyter** pour les notebooks
   * et accessoirement, *markdown* pour la mise en forme du texte,
   * et les formules mathématiques en $\LaTeX$
-* **`git`** pour la gestion de versions; c'est un outil super-utile pour le développement, c'est indispensable que vous sachiez l'utiliser 
+* **`git`** pour la gestion de versions; c'est un outil super-utile pour le développement, c'est indispensable que vous sachiez l'utiliser
 
 +++
 
@@ -54,7 +56,7 @@ le plus souvent, les supports de cours sont fournis **sous forme de notebooks**;
 
 ### dépôt git
 
-ces contenus vous sont exposés au travers d'un **dépôt git** (hébergé sur `https://github.com`)
+ces contenus vous sont exposés au travers d'un **dépôt git** (hébergé sur <https://github.com>)
 
 en général il y aura **un dépôt par bloc de cours** (typiquement, un pour cette introduction, un pour le cours Python numérique, un pour votre cours de langage, …)
 
@@ -75,7 +77,7 @@ une des premières choses que nous apprendrons, ce sera donc
 
 ### `nbhosting`
 
-vous aurez également accès à une plateforme hébergée sur `https://nbhosting.inria.fr`) où ces contenus seront accessibles sans installation préalable; cette facilité est conçue essentiellement pour les premiers cours, de sorte que l'on puisse avancer avant que toute la promo soit entièrement bien installée sur les ordis perso
+vous aurez également accès à une plateforme hébergée sur <https://nbhosting.inria.fr>) où ces contenus seront accessibles sans installation préalable; cette facilité est conçue essentiellement pour les premiers cours, de sorte que l'on puisse avancer avant que toute la promo soit entièrement bien installée sur les ordis perso
 
 il devrait être entendu que le mode d'utilisation "normal" des supports est **en local sur votre ordi**, le recours à nbhosting est conçu comme transitoire, et devrait disparaitre progressivement au cours de l'année
 

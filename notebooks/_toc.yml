@@ -1,0 +1,9 @@
+format: jb-book
+root: 00-intro
+parts:
+- caption: "intro"
+  chapters:
+  - glob: 0*.md
+- caption: "installations"
+  chapters:
+  - glob: 1*.md
