@@ -1,10 +1,19 @@
 <style>
 
-div.licence {
+.licence {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column.center {
     align-items: center;
 }
 
