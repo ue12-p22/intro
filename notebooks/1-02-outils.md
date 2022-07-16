@@ -29,11 +29,11 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
 
 <div class="licence">
     <span>Licence CC BY-NC-ND</span>
-    <div style="display:grid">
+    <div class="column center">
         <span>Thierry Parmentelat</span>
         <span>Valérie Roy</span>
     </div>
-    <div>    
+    <div class="column">    
         <img src="media/inria-25-alpha.png" />
         <img src="media/ensmp-25-alpha.png" />
     </div>
