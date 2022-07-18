@@ -41,7 +41,7 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
 
 +++ {"slideshow": {"slide_type": ""}}
 
-## OS - basics
+# OS - basics
 
 +++ {"slideshow": {"slide_type": ""}}
 
@@ -51,7 +51,7 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
 
 +++ {"slideshow": {"slide_type": ""}}
 
-### à quoi ça sert ?
+## à quoi ça sert ?
 
 * calculette  
   * un programme a accès à toutes les ressources
@@ -65,7 +65,7 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
 ### rôle de l'OS
 
 * fournir de l'**isolation** entre les programmes
-  * si deux programmes différents utilisent la case 1  
+  * si deux programmes différents utilisent la case mémoire 1  
     pour ranger une donnée, ça ne va pas le faire !
 
 * permettre la **concurrence**
@@ -80,15 +80,15 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
 
 (\*) ou alors:  *Task Manager* sous Windows, et *top* sous linux
 
-+++ {"slideshow": {"slide_type": ""}, "tags": ["level_intermediate"]}
++++ {"slideshow": {"slide_type": ""}}
 
 ### notion de **processus** (en anglais *process*)
 
-* chaque programme qui tourne constitue un *process*
+* chaque programme qui tourne constitue un ***process***
 * les process sont isolés les uns des autres  
   * notamment la mémoire
 * l'OS fait tourner tous les programmes  
-  * dans un mode *chacun son tour*  
+  * dans un mode ***chacun son tour***
   * à relativement haute fréquence
   * c'est le travail du *scheduler*
 
@@ -110,8 +110,8 @@ courant
 c'est-à-dire techniquement :
 
 * le **seul** programme dans l'ordinateur qui a **accès direct** aux périphériques
-* qui "fait tourner" les programmes en leur donner tour à tour accès au processeur
-* fait en sortes qu'ils soient **isolés les uns des autres**
+* qui "fait tourner" les programmes en leur donnant tour à tour accès au processeur
+* et qui fait en sortes qu'ils soient **isolés les uns des autres**
 * tous les autres programmes (*user land*) accèdent à ces ressources au travers
   d'**abstractions**
 
@@ -121,7 +121,7 @@ c'est-à-dire techniquement :
   * **système de fichiers**  
     le disque dur est accessible au travers de dossiers et fichiers
 
-  * etc ...
+  * **interface réseau** etc…
 
 +++
 
@@ -663,3 +663,100 @@ i.e. comme avec le terminal
 
 ![](media/fig-show-extensions-1.png)
 ![](media/fig-show-extensions-2.png)
+
++++
+
+## quelques commandes `bash` utiles
+
++++
+
+### commandes utiles
+
++++
+
+Voici un rappel des commandes bash les plus simples et les plus utiles
+
+| commande | fonction |
+|-:|:-|
+| `cd` | changer de dossier courant |
+| `pwd` | afficher le dossier courant |
+| `ls` | lister les fichiers et dossiers dans le dossier courant |
+| `mkdir` | créer un dossier |
+| `rm` | supprimer des fichiers - **attention** ils sont supprimés pour de bon et non pas placés dans la corbeillle |
+| `echo un message` | pour afficher du texte |
+| `cat unfichier` | pour afficher le contenu d'un (ou plusieurs) fichier |
+
++++
+
+### redirections
+
++++
+
+plutôt que d'afficher la résultat d'une commande dans le terminal, il est parfois praqtique de rediriger cela dans un fichier
+
+par exemple si j'écris dans le terminal
+
+```{code-cell}
+# je crée ou j'écrase le fichier foo.txt
+echo "un petit fichier bidon" > foo.txt
+```
+
+ce qui va se passer c'est que je vais créer (ou écraser) le fichier `foo.txt` pour y ranger dedans la chaine `un petit fichier bidon\n`
+
+le dernier cararactère (`\n`) correspond à un **saut de ligne**
+
++++
+
+### *globbing*
+
+
++++
+
+si j'ai plusieurs fichiers qui se terminent en `.txt`, je peux les lister avec la notation en `*` comme ceci
+
+```{code-cell}
+# je crée (ou j'écrase) un second fichier bar.txt
+echo "un autre fichier bidon" > bar.txt
+```
+
+```{code-cell}
+# de là je peux lister tous les fichiers qui se terminent en .txt
+
+ls *.txt
+```
+
+```{code-cell}
+# ou tous ceux qui commencent par un f
+
+ls f*
+```
+
+```{code-cell}
+# ou toute combinaison du même genre
+
+ls f*txt
+```
+
+#### à n'importe quelle profondeur
+
+```{code-cell}
+# si je veux chercher tous les fichiers en *.css
+# à n'importe quelle profondeur sous mon dossier courant
+
+ls **/*css
+```
+
++++ {"tags": ["level_intermediate"]}
+
+#### les crochets `[]`
+
+```{code-cell}
+:tags: [level_intermediate]
+
+# on peut aussi utiliser les [] 
+# ici tous les fichiers qui commencent par un f ou un b et qui finissent en .txt
+
+ls [fb]*.txt
+```
+
+***
