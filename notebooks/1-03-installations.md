@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: outils (2)
+  title: installations
 ---
 
 ```{code-cell}
@@ -41,7 +41,7 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
 
 +++
 
-# outils de base
+# installations
 
 ## éditeur de code
 
@@ -390,6 +390,7 @@ nous allons
 * faire une démonstration de l'installation miniconda sur Windows à partir de
   <https://docs.conda.io/en/latest/miniconda.html> (les linux et les macos le font pour
   leur OS + architectures)
+
 * puis écrire un ou deux programmes Python très simples
 * et les exécuter dans un terminal
 
@@ -492,6 +493,7 @@ dans un terminal tout neuf.
   * avec `$ ` :  que la commande s'adresse au terminal  
   c-à-d à nouveau : GitBash sur Windows, Terminal sur MacOS,  
   et n'importe quel terminal bash sur linux
+
   * avec `>>> ` : que la commande s'adresse à l'interpréteur Python
 ***
 
@@ -526,10 +528,13 @@ afficher un texte, puis quitter l'interpréteur.
 
 * lancer simplement `python` dans `GitBash` ne fonctionne pas  
   (le programme n'affiche pas le prompt et semble boucler sans rien afficher)
+
 * dans `GitBash` vous **devez** tapez à la place `python -i`  
   (le `-i` est pour *interactive*) pour avoir un interpréteur interactif
+
 * depuis le terminal embarqué dans vscode, vous pouvez faire simplement `python`  
   (`python -i` fonctionne bien aussi d'ailleurs)
+
 * depuis GitBash et le terminal vs-code, vous pouvez lancer normalement `ipython`  
   (dont on parle un peu plus bas)
 
@@ -790,6 +795,7 @@ en première approximation, on peut se servir de `git` pour :
 * travailler "avec un filet"  
   pour facilement **revenir en arrière** à une version qui marche  
   ça sert donc en particulier de **sauvegarde de luxe**
+
 * lorsqu'on travaille sur plusieurs améliorations en même temps  
   on peut facilement créer **des branches**  
   pour traiter les améliorations séparément  
@@ -902,11 +908,13 @@ https://en.wikipedia.org/wiki/URL
 
 * le premier terme (`http` ou `https`) désigne **le protocole** à utiliser pour joindre la
   ressource
+
 * le second morceau (`google.com` ou `en.wikipedia.org`) désigne le *hostname* qu'il faut
   joindre; en fait on utilise un service réseau [qui s'appelle le DNS (Domain Name
   Server](https://en.wikipedia.org/wiki/Domain_Name_System) pour traduire le nom
   `www.google.com` en une adresse réseau (et c'est comme ça qu'en fait deux requêtes
   n'aboutissent pas forcément sur le même serveur, heureusement d'ailleurs)
+
 * la suite est optionnelle et permet de désigner un item particulier à l'intérieur de ce
   serveur; c'est comme ça qu'on peut ranger des milliers de pages à l'intérieur du serveur
   wikipedia
@@ -942,6 +950,7 @@ il vous suffit pour ça de faire
 
 * cette commande va créer sur votre disque tout un répertoire, dont le nom est
   `python-numerique`
+
 * notez qu'il sera créé **dans votre répertoire de travail** (`pwd`)
 * donc commencez par **vous mettre au bon endroit**
 * le nom `python-numerique` est déduit de la dernière partie de l'URL  
@@ -1112,6 +1121,7 @@ il y a aussi des raccourcis pratiques pour créer directement des sections
 
 * `Control-M 1` met la cellule en markdown, et insère si nécessaire un `#` au début de la
   cellule; on crée ainsi une cellule de titre de rang 1
+
 * `Control-M 2` : de rang 2, etc…
 
 +++
@@ -1209,6 +1219,7 @@ puis vous pouvez
 * ouvrir le notebook de démonstration  (*2-10-demonstration.md*)  
   (je ne recommande pas forcément de commencer avec le présent notebook, car il utilise un
   kernel `bash` qui n'est pas standard…)
+
 * l'exécuter localement
 * et vous amuser à le modifier
 
@@ -1276,6 +1287,7 @@ vs-code vous montre les erreurs :
 
 * l'extension Python de vs-code permet d'afficher **en permanence**  (à chaque sauvegarde)
   les soucis détectés par `pylint`
+
 * c'est pourquoi si `pylint` n'est pas installé, vs-code va automatiquement vous proposer
   de le faire (choisissez alors de préférence l'option *install with pip*)
 
@@ -1405,6 +1417,7 @@ Python différents; c'est utile notamment :
 * si vous travaillez sur plusieurs projets différents, qui ont chacun leur ensemble de
   dépendances, pas forcément compatibles entre elles; par exemple, l'un utilise Django-2.x
   et l'autre Django-3.x
+
 * et aussi, lors de la sortie d'une nouvelle release de Python, que vous voulez essayer
   sans tout casser
 
@@ -1442,10 +1455,12 @@ mental est simple :
 
 * lorsque vous créez un terminal, vous êtes dans l'environnement qui s'appelle `base`,
   c'est celui que vous avez utilisé jusqu'ici
+
 * vous pouvez passer dans un autre environnement avec  
   `conda activate mon_environnement`  
   qui a pour effet, entre autres, de modifier votre `PATH` pour que la commande `python`
   soit cherchée ailleurs
+
 * pour en sortir, et revenir dans `base`, vous faites  
   `conda deactivate`
 

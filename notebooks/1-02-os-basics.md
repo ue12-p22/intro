@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: installation des outils
+  title: NO HEADING 1 found
 ---
 
 ```{code-cell}
@@ -27,13 +27,11 @@ from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/style.css")
 ```
 
-+++ {"tags": ["level_intermediate"]}
-
 <div class="licence">
     <span>Licence CC BY-NC-ND</span>
     <div class="column center">
         <span>Thierry Parmentelat</span>
-        <span>Valérie Roy</span
+        <span>Valérie Roy</span>
     </div>
     <div class="column">    
         <img src="media/inria-25-alpha.png" />
@@ -41,180 +39,9 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/
     </div>
 </div>
 
-+++
-
-# UE 12 - Installations
-
-+++
-
-## comment lire ce notebook
-
-+++
-
-### nbhosting
-
-+++
-
-pour que vous puissiez lire ce premier cours, alors que vous n'avez encore rien installé sur votre ordi, rendez-vous en ligne sur le serveur de notebooks
-
-<https://nbhosting.inria.fr/auditor/notebook/ue12-p21-python-primer>
-
-+++
-
-![](media/nbhosting-shrink.gif)
-
-+++
-
-### *Shift-Enter*
-
-+++
-
-ce document est un *notebook*; il contient des **cellules**, avec soit du texte (comme
-celle-ci), soit du code (comme la suivante) qu'on peut exécuter au fur et à mesure qu'on
-lit
-
-le plus simple pour lire un notebook c'est de
-
-* sélectionner une cellule (avec la souris)
-* taper *Maj-Entrée* (ou *Shift-Return* sur un clavier anglais)  
-  ça exécute la cellule courante et ça passe à la suivante; essayez...
-
-```{code-cell}
-# ma première cellule de code contient
-# un commentaire
-# et une commande toute simple
-# qui affiche un message
-
-echo "hey there"
-```
-
-vous avez dû provoquer l'affichage de `hey there` comme résultat de l'exécution de la cellule juste au dessus de celle-ci;  
-continuez la lecture en faisant 'Maj-Entrée'
-
-+++
-
-remarquez que dans ce notebook le code qui s'exécute n'est pas du Python, c'est du bash - le langage du terminal
-
-+++
-
-### table des matières
-
-+++
-
-vous pouvez en principe activer la tables des matières en cliquant sur ce bouton :  
-(sinon, voyez la toute dernière section)
-
-![](media/fig-jupyter-toc2.png)
-
 +++ {"slideshow": {"slide_type": ""}}
 
-## objectifs
-
-+++
-
-l'approche pédagogique vise en premier lieu **à vous mener à l'autonomie** en ce qui
-concerne l'utilisation des ressources digitales; c'est pourquoi nous ne sommes **pas en
-salle informatique** comme ça a pu se faire à une époque; l'objectif est que vous sachiez
-à terme utiliser **uniquement votre ordinateur** pour travailler (ce qui a été très
-pratique lors des confinements liés au covid).
-
-+++
-
-ce cours d'introduction vise à présenter, et à vous faire installer, les outils de base
-pour le cours d'informatique; il ne présente **aucune difficulté** mais vous êtes invité·e
-malgré tout à le suivre **avec une grande attention** car tous ces éléments sont
-**cruciaux pour la suite**
-
-+++ {"slideshow": {"slide_type": ""}}
-
-### objectifs globaux
-
-pour le cours d'informatique de 1ère année :
-
-* prise d'**autonomie**  
-  * par rapport à un ordinateur personnel
-  * par rapport au numérique et à la programmation
-  * focus sur quelques outils (du moment)
-* pour les mathématiques, le machine-learning et autres enseignements
-  * Python - numpy - pandas - matplotlib  
-  * notebooks Jupyter
-* workflow de gestion de projets de développement
-  * git & github
-* approfondissement langage (un parmi 3)
-  * Python
-  * C++
-  * Java
-* culture informatique
-  * notions d'algorithmique et de complexité
-  * notions sur les systèmes d'exploitation des ordinateurs (OS)   
-  * rudiments de programmation Web
-  * rudiments sur programmation parallèle
-  * rudiments sur l'utilisation du réseau
-* projet informatique
-  * en équipe
-  * posé par une personne extérieure à l'équipe d'enseignants
-
-+++
-
-### objectifs
-
-pour ce premier cours d'introduction/installation
-
-* survol ultra-rapide des concepts de base (simple, basique)
-* survol rapide et installation des outils de base  
-  * OS, terminal, dossiers et fichiers
-  * éditeur de code, markdown
-  * git (ultra-light)
-  * Python, Jupyter
-* être capable de rapatrier le cours sur votre ordi, et d'y exécuter les notebooks
-
-Notez que
-
-* le cours est **coopératif**, et pas compétitif  
-  ceux qui savent déjà **aident leurs camarades**
-* voyez aussi la checklist des compétences requises - [notebook
-  `2-98-checklist.md`](https://nbhosting.inria.fr/auditor/notebook/ue12-p21-python-primer/notebooks/2-98-checklist)
-  * à terminer pour la prochaine fois si nécessaire
-
-+++
-
-### niveaux de lecture
-
-+++
-
-on a défini plusieurs niveaux de lecture, parfois représentées avec des couleurs
-
-+++ {"tags": ["level_basic"]}
-
-#### basique
-
-+++ {"tags": ["level_intermediate"]}
-
-#### intermédiaire
-
-+++ {"tags": ["level_advanced"]}
-
-#### avancé
-
-+++
-
-pour que les couleurs apparaissent bien (lorsque vous lisez les notebooks en local sur votre ordi), vous devez avoir installé 
-
-```bash
-pip install nb-courselevels
-```
-
-+++ {"tags": ["framed_cell"]}
-
-#### cadres
-
-parfois aussi les cellules apparaissent avec un cadre comme celle-ci
-
-et de la même façon pour que cela fonctionne il vous avoir installé `nb-courselevels`
-
-+++ {"slideshow": {"slide_type": ""}}
-
-## OS
+## OS - basics
 
 +++ {"slideshow": {"slide_type": ""}}
 
@@ -240,11 +67,14 @@ et de la même façon pour que cela fonctionne il vous avoir installé `nb-cours
 * fournir de l'**isolation** entre les programmes
   * si deux programmes différents utilisent la case 1  
     pour ranger une donnée, ça ne va pas le faire !
+
 * permettre la **concurrence**
   * faire tourner plusieurs programmes en même temps  
     sur un nombre fini de processeurs  
+
   * lancez sur mac (\*) Activity Monitor   
     typiquement **plusieurs dizaines** de programmes
+
 * fournir de l'**isolation** entre les utilisateurs
 
 
@@ -284,10 +114,13 @@ c'est-à-dire techniquement :
 * fait en sortes qu'ils soient **isolés les uns des autres**
 * tous les autres programmes (*user land*) accèdent à ces ressources au travers
   d'**abstractions**
+
   * mémoire : **mémoire virtuelle**  
     la case mémoire '1' est redirigée vers un bout de mémoire allouée au programme  
+
   * **système de fichiers**  
     le disque dur est accessible au travers de dossiers et fichiers
+
   * etc ...
 
 +++
@@ -326,6 +159,7 @@ utilisateurs)
 
 * non seulement pour les postes de travail c'est maintenant  
   1 ordi = 1 personne
+
 * mais en plus, la **même personne** peut avoir besoin de **plusieurs environnements** par
   exemple, un développeur peut travailler sur plusieurs projets, un en Python-3.8, un
   autre en Python-3.10, avec des combinaisons de librairies différentes pour chaque projet
@@ -390,6 +224,7 @@ s'appelle ``bash``
 * sur Windows, il faut l'installer séparément.  
   nous allons vous guider dans l'installation d'une app qui s'appelle ***git for
   windows*** qui est cool parce qu'elle contient
+
   * le terminal `bash`, comme ça tout le monde a le même sur tous les OS  
   * et `git`, on va bientôt en parler, bref on fait d'une pierre deux coups
 
@@ -434,6 +269,7 @@ ce n'est pas crucial de le savoir, mais si vous êtes curieux, sachez que
 
 * `PATH` c'est ce qu'on appelle une variable d'environnement (ça veut dire qu'elle se
   propage d'un processus à l'autre),
+
 * et que c'est une liste de répertoires où sont cherchées les commandes
 
 ```{code-cell}
@@ -789,8 +625,10 @@ sur le screenshot suivant, on a choisi
 * de créer un dossier `git` directement dans le Desktop
 * pour l'instant il est vide, mais c'est là qu'on va ranger tous les dossiers de premier
   niveau
+
 * comme il est créé dans le dossier `Desktop`, on voit ce dossier `git` directement sur le
   bureau
+
 * et pour faire bon poids on a même créé un raccourci dans l'explorateur de fichiers
 * tout ça pour pouvoir y accéder rapidement en toute circonstance
 * remarquez aussi le menu contextuel; on peut facilement créer un `git bash` qui démarrera

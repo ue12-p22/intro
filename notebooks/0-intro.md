@@ -16,7 +16,7 @@ language_info:
   nbconvert_exporter: python
   pygments_lexer: ipython3
 nbhosting:
-  title: intro
+  title: introduction
 ---
 
 ```{code-cell} ipython3
