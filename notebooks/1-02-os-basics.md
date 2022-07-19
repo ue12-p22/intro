@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: NO HEADING 1 found
+  title: OS - basics
 ---
 
 ```{code-cell}
@@ -27,13 +27,13 @@ from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/style.css")
 ```
 
-<div class="licence">
+<div class="license">
     <span>Licence CC BY-NC-ND</span>
     <div class="column center">
         <span>Thierry Parmentelat</span>
         <span>Valérie Roy</span>
     </div>
-    <div class="column">    
+    <div class="column">
         <img src="media/inria-25-alpha.png" />
         <img src="media/ensmp-25-alpha.png" />
     </div>
@@ -708,7 +708,6 @@ le dernier cararactère (`\n`) correspond à un **saut de ligne**
 +++
 
 ### *globbing*
-
 
 +++
 
