@@ -1,7 +1,7 @@
 # Jupyter Book settings
 
 title: Introduction
-author: Thierry Parmentelat
+author: Thierry Parmentelat & Valérie Roy
 logo: media/logo-python.svg
 
 repository:
@@ -13,6 +13,8 @@ html:
   use_repository_button: yes
   use_edit_page_button: yes
   use_issues_button: yes
+  extra_footer: |
+    <p>Licence CC BY-NC-ND</p>
 
 ###
 
@@ -22,12 +24,15 @@ execute:
 #  execute_notebooks: "force"
   execute_notebooks: cache
 
+
+
 sphinx:
   config:
     nb_custom_formats:
       .py:
         - jupytext.reads
         - fmt: py:percent
+    html_show_copyright: false
 
 # for raw <img> tags in markdown
 parse:

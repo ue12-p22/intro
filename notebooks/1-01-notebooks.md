@@ -21,25 +21,15 @@ nbhosting:
   title: notebooks
 ---
 
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
+
 ```{code-cell}
+:tags: [raises-exception]
+
 %%python
 from IPython.display import HTML
-HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/media/style.css")
+HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
 ```
-
-<div class="license">
-    <span>Licence CC BY-NC-ND</span>
-    <div class="column center">
-        <span>Thierry Parmentelat</span>
-        <span>Valérie Roy</span>
-    </div>
-    <div class="column">
-        <img src="media/inria-25-alpha.png" />
-        <img src="media/ensmp-25-alpha.png" />
-    </div>
-</div>
-
-+++
 
 # notebooks
 
