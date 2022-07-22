@@ -19,10 +19,7 @@ nbhosting:
   title: introduction
 ---
 
-<div class="license">
-    <span>Licence CC BY-NC-ND,</span>
-    <span>Thierry Parmentelat & Valérie Roy</span>
-    </div>
+Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 ```{code-cell} ipython3
 :tags: [raises-exception]
