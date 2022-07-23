@@ -586,27 +586,28 @@ c'est très facile d'installer d'autres librairies au delà de cet ensemble mini
 pour cela python vient avec une commande qui s'appelle `pip`  
 qui s'utilise directement **depuis le terminal**
 
-```{code-cell}
-# pour avoir la liste des librairies installées on peut faire
++++
+
+pour avoir la liste des librairies installées on pourrait faire
+```bash
 pip list
 ```
+
++++
 
 #### installer d'autres librairies avec `pip install`
 
 nous allons utliser `pip install` pour installer IPython, et pour ça vous allez taper
 (dans un terminal)
 
-```console
-pip install ipython
-```
-
-```{code-cell}
+```bash
 # la première fois qu'on installe une librairie, ça peut prendre
 # un petit moment pour aller chercher les packages
 # sur Internet et les installer
-
 pip install ipython
 ```
+
++++
 
 ### micro-démo `ipython`
 
