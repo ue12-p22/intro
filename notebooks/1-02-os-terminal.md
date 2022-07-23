@@ -33,13 +33,13 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_stati
 
 +++ {"slideshow": {"slide_type": ""}}
 
-# OS - basics
+# OS & terminal
 
 +++ {"slideshow": {"slide_type": ""}}
 
-* Windows, MacOS, linux
+* votre OS (Operating System), c'est Windows, MacOS, ou linux
 * quelques différences (très) visibles
-* mais de nombreux concepts communs
+* mais en réalité de très nombreux concepts communs
 
 +++ {"slideshow": {"slide_type": ""}}
 
@@ -275,11 +275,11 @@ echo $PATH
 
 +++
 
-Vous êtes sous linux ou sur MacOs donc vous avez déjà `bash`.
+si vous êtes sous linux ou sur MacOs, vous avez déjà `bash` préinstallé
 
 +++
 
-Vous êtes sous Windows : on a vu qu'en installant ***git for windows*** on va faire d'une
+si vous êtes sous Windows : en installant ***git for windows*** on va faire d'une
 pierre deux coups, et installer à la fois `bash` et `git`
 
 * allez sur le site là  <https://gitforwindows.org/>, on va vous guider (en vous montrant
@@ -287,7 +287,7 @@ pierre deux coups, et installer à la fois `bash` et `git`
 
 +++
 
-> le professeur fait une installation en live de gitforwindows (éventuellement sur une virtualbox)
+lancez l'installation...
 
 à la question ***Adjusting your PATH environment*** :  
 choisissez au moins l'option recommandée (#2), idéalement l'option #3
@@ -330,8 +330,8 @@ le **dossier** est juste un cas particulier de fichier
 
 termes synonymes :
 
-* dossier, répertoire, *folder*, *directory*
-* fichier, *file*
+* dossier, répertoire, *folder*, *directory*: c'est tout pareil
+* fichier, *file*: idem ce sont des synonymes
 
 +++
 
@@ -466,10 +466,13 @@ car le répertoire `.` désigne justement le répertoire courant
 
 +++
 
-par convention `..` désigne le répertoire "au dessus" du répertoire courant  
-on l'utilise pour fabriquer des chemins du genre de
+par convention:
 
-    cat ../frere/neveu
+* `.` désigne le répertoire courant
+* `..` désigne le répertoire "au dessus" du répertoire courant  
+  on l'utilise pour fabriquer des chemins du genre de
+
+      cat ../frere/neveu
 
 +++
 
@@ -526,7 +529,7 @@ pwd
 
 +++
 
-chaque utilisateur possède un répertoire,  
+enfin chaque utilisateur possède un répertoire,  
 qui est la racine de l'arbre dans lequel il peut ranger ses affaires  
 indépendamment du système d'exploitation
 
@@ -548,7 +551,7 @@ cd -
 pwd
 ```
 
-## organisation en dossiers
+## organisation en dossiers: quelques conseils
 
 +++
 
@@ -579,7 +582,7 @@ et en dessous de ce dossier principal vous allez ranger vos différents dossiers
 
 évitez de couper les cheveux en 4 en créant plein de sous-répertoires, genre :
 
-~~`/User/dupont/Desktop/git/mines/première-année/info/ue12/python-numerique`~~
+~~`/User/jeanmineur/Desktop/git/mines/première-année/info/ue12/python-numerique`~~
 
 au contraire :
 
@@ -589,7 +592,7 @@ au contraire :
 * ça peut largement suffire
 
 du coup créez plutôt un dossier  
-`/User/dupont/Desktop/git/ue12-python-numerique`
+`/User/jeanmineur/Desktop/git/ue12-python-numerique`
 
 +++
 
@@ -666,7 +669,7 @@ i.e. comme avec le terminal
 
 +++
 
-Voici un rappel des commandes bash les plus simples et les plus utiles
+voici pour résumer un rappel des commandes bash les plus simples et les plus utiles
 
 | commande | fonction |
 |-:|:-|
@@ -693,7 +696,8 @@ par exemple si j'écris dans le terminal
 echo "un petit fichier bidon" > foo.txt
 ```
 
-ce qui va se passer c'est que je vais créer (ou écraser) le fichier `foo.txt` pour y ranger dedans la chaine `un petit fichier bidon\n`
+ce qui va se passer c'est que je vais créer (ou écraser) le fichier `foo.txt` pour y ranger dedans la chaine  
+`un petit fichier bidon\n`
 
 le dernier cararactère (`\n`) correspond à un **saut de ligne**
 
@@ -731,10 +735,10 @@ ls f*txt
 #### à n'importe quelle profondeur
 
 ```{code-cell}
-# si je veux chercher tous les fichiers en *.css
+# si je veux chercher tous les fichiers en *.txt
 # à n'importe quelle profondeur sous mon dossier courant
 
-ls **/*css
+ls **/*.txt
 ```
 
 +++ {"tags": ["level_intermediate"]}

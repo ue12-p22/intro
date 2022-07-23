@@ -40,8 +40,8 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_stati
 pour pouvoir facilement modifier le contenu de nos fichiers texte, comme tout à l'heure le
 fichier `foo.txt`, on va utiliser un programme qui s'appelle un **éditeur de code**
 
-en effet, il ne faut **pas utiliser un outil comme Word** pour éditer des programmes:
-c'est un éditeur de texte pas un éditeur de code !
+en effet, il **ne faut pas** utiliser un **outil comme Word** pour éditer des programmes:
+c'est un éditeur de texte, et pas un éditeur de code !
 
 > l'enseignant lance Visual Studio Code et le montre très très rapidement
 
@@ -51,19 +51,17 @@ c'est un éditeur de texte pas un éditeur de code !
 
 +++
 
-forts de notre expérience de l'année dernière, cette année 2020-2021, nous demandons à
-**tous** les élèves d'installer et de savoir utiliser vs-code
+nous demandons à **tous** les élèves d'installer et de savoir utiliser vs-code
 
-et **ATTENTION** il y a eu **beaucoup de problèmes** l'an passé avec les éditeurs de type
-*pyzo*, ne les utilisez surtout pas dans nos cours, vous allez perdre un temps précieux et
-en faire perdre à vos enseignants pour des raisons inintéressantes et extérieures à Python
+et **ATTENTION** il y a eu **beaucoup de problèmes** les années passé avec les éditeurs de type *pyzo*, ne les utilisez surtout pas dans nos cours, vous allez perdre un temps précieux et en faire perdre à vos enseignants pour des raisons inintéressantes et extérieures à Python
 
 +++
 
 On y va. Le site est là <https://code.visualstudio.com/>. Vous voulez installer donc il va
 falloir que vous alliez dans une section *download* ... vous la voyez ? à vous de jouer
-maintenant, l'enseignant va montrer les étapes pour les élèves sous Windows. Lisez bien
-les messages et posez nous vos questions.
+maintenant
+
+**note**: pour les éventuelles questions posées lors de l'installation, il y a ci-dessous une copie d'écran, mais seulement pour les cas où les réponses par défaut doivent être modifiées
 
 +++
 
@@ -84,9 +82,7 @@ Que vous ayez réussi à installer visual studio code sur votre portable ou pas 
 suivez maintenant ce que montre l'enseignant.
 
 Si vous avez rencontré des problèmes imprévus lors de l'installation (ce qui n'est pas
-rare en informatique), venez nous voir plus tard pour que nous vous aidions et postez vos
-problèmes/questions sur *discourse* pour qu'on y regroupe les réponses aux mêmes
-problèmes.
+rare en informatique), venez nous voir plus tard pour que nous vous aidions.
 
 +++
 
@@ -140,7 +136,7 @@ problèmes.
 
 +++
 
-voir aussi  
+pour plus de détails, voir aussi  
 https://code.visualstudio.com/docs/getstarted/userinterface
 
 +++
@@ -152,14 +148,18 @@ exercice :
 
 +++ {"tags": ["level_intermediate"]}
 
-il est recommandé, avec vs-code, de prendre l'habitude d'ouvrir un **répertoire** plutôt
+**note**: il est recommandé, avec vs-code, de prendre l'habitude d'ouvrir un **répertoire** plutôt
 qu'un fichier
 
 si vous ouvrez un fichier (par exemple par un clic droit sur le fichier dans l'explorateur
 de fichiers), vs-code va vous ouvrir le fichier dans une fenêtre déjà ouverte - souvent ça
 va arriver comme un cheveu sur la soupe, dans un autre répertoire; si votre objectif c'est
-d'ouvrir une nouvelle fenêtre, préfèrez ouvrir le dossier (toujours avec le clic droit,
-mais sur le dossier lui-même et non le fichier)
+d'ouvrir une nouvelle fenêtre, préfèrez ouvrir tout un dossier
+
+pour cela, vous pouvez soit 
+
+* taper `code .` dans le terminal comme on l'a vu (et ici le `.` correspond au dossier courant)
+* ou utiliser le clic droit depuis l'explorateur Windows, mais sur le dossier lui-même et non le fichier
 
 +++
 
@@ -372,7 +372,7 @@ ceux qui veulent creuser peuvent
 * il y a de très nombreuses distributions disponibles
 * notre recommandation : miniconda
   * relativement léger
-  * permet d'installer en mode "user" i.e. sans droits administrateur
+  * permet d'installer en mode "user", c'est-à-dire sans droits administrateur
 * (ça va sans le dire mais ne prenez **surtout pas Python 2.7** !)
 
 nous allons
@@ -390,7 +390,11 @@ nous allons
 
 +++
 
-nous allons pour commencer créer un dossier dont le nom est court et simple,
+une première précaution, spécifique à Windows; il s'agit de contourner un bug dans l'installateur conda, qui se déclenche lorsqu'on choisit un dossier d'installation dans le nom duquel se trouve un caractère accentué ou un espace
+
++++
+
+du coup, nous allons pour commencer créer un dossier dont le nom est court et simple,
 et **qui ne contient pas d'accent** (c'est très important que le chemin complet pour
 accéder au dossier où on installe miniconda ne comporte pas d'accents.)
 
@@ -427,7 +431,7 @@ droite par exemple)
 
 +++
 
-à ce stade on peut lancer l'installation de miniconda
+à ce stade, pour tous les OS, on peut lancer l'installation de miniconda
 
 ![](media/fig-miniconda-download.png)
 
@@ -440,13 +444,13 @@ question, **sauf pour les deux écrans qui suivent**
 
 (1) sur cet écran vous remplacez le chemin qu'on vous propose par défaut, et vous
 choisissez à la place le dossier qu'on a créé dans l'étape précédente, c'est-à-dire
-`c:\miniconda`
+`c:\miniconda` (pour les autres OS, vous pouvez prendre sans souci la valeur par défaut pour cette question)
 
 ![](media/fig-miniconda-set-install-dir.png)
 
 +++
 
-(2) il est important de bien cocher la case en rouge; l'autre est recommandée également
+(2) il est important de **bien cocher la case en rouge** (malgré l'avertissement); l'autre est recommandée également
 
 ![](media/fig-miniconda-install.png)
 
@@ -500,8 +504,8 @@ $ type python
 python is /c/Users/Thierry Parmentelat/miniconda3/python
 ```
 
-si à ce stade vous avez un `python: not found* c'est que vous n'avez pas bien coché la case  
-*Add Miniconda3 to my PATH environment variable*
+si à ce stade vous avez un `python: not found` c'est que vous n'avez pas bien coché la case  
+*Add Miniconda3 to my PATH environment variable*; dans ce cas le plus simple est de recommencer l'installation
 
 +++
 
@@ -555,7 +559,7 @@ dans le répertoire de votre choix, ouvrez *vs-code* et créez un fichier qui s'
 cat ../demo/fact.py
 ```
 
-et dans le même répertoire lancez python pour calculer le factoriel d'un nombre
+et dans le même répertoire lancez python pour exécuter ce programme, et donc calculer et afficher le factoriel de deux nombres
 
 ```{code-cell}
 python ../demo/fact.py 10

@@ -43,6 +43,8 @@ pour que vous puissiez lire ce premier cours, alors que vous n'avez encore rien 
 
 <https://nbhosting.inria.fr/auditor/notebook/ue12-p21-python-primer>
 
+**note**: vous avez reçu par mail les identifiants correspondants
+
 +++
 
 ![](media/nbhosting-shrink.gif)
@@ -60,7 +62,7 @@ lit
 le plus simple pour lire un notebook c'est de
 
 * sélectionner une cellule (avec la souris)
-* taper *Maj-Entrée* (ou *Shift-Return* sur un clavier anglais)  
+* taper *Maj-Entrée* (ou *Shift-Enter* sur un clavier anglais)  
   ça exécute la cellule courante et ça passe à la suivante; essayez...
 
 ```{code-cell}
@@ -125,3 +127,7 @@ pip install nb-courselevels
 parfois aussi les cellules apparaissent avec un cadre comme celle-ci
 
 et de la même façon pour que cela fonctionne il vous avoir installé `nb-courselevels`
+
++++
+
+***
