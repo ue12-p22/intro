@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: setup git
+  title: git
 ---
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
@@ -29,7 +29,188 @@ from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
 ```
 
-# setup git
+# git
+
++++
+
+## survol
+
++++
+
+`git` fait partie des outils dits de "SCM" *source code management*
+
+son rôle est d'aider les développeurs à s'y retrouver dans la gestion des versions d'un
+projet
+
+un projet est constitué d'un ensemble de fichiers dont vous souhaitez conserver un
+historique des modifications
+
++++
+
+d'ailleurs ça n'est pas limité aux logiciels :
+
+* jeux de données
+* documentation
+* lois (très utile pour gérer les modifications)
+* …
+
++++
+
+## à quoi ça sert
+
++++
+
+### quand on travaille seul
+
++++
+
+en première approximation, on peut se servir de `git` pour :
+
+* travailler "avec un filet"  
+  pour facilement **revenir en arrière** à une version qui marche  
+  ça sert donc en particulier de **sauvegarde de luxe**
+
+* lorsqu'on travaille sur plusieurs améliorations en même temps  
+  on peut facilement créer **des branches**  
+  pour traiter les améliorations séparément  
+  avant de tout (re)mettre ensemble
+
++++
+
+### à quoi ça sert - en équipe
+
++++
+
+on peut aussi :
+
+* **synchroniser** le travail entre groupes / personnes
+* dans un sens ou dans l'autre  
+  c-a-d: chacun travaille de son coté, et on réconcilie le tout ensuite
+
+git ne fait pas de supposition sur le workflow ou l'organisation,  
+on peut l'adapter à tous les cas d'usage (un seule personne, un petit groupe, plusieurs
+groupes, open-source, …)
+
++++
+
+## les notions de base
+
++++
+
+* un dépôt (en anglais *repo*) :
+  * ça ressemble à **un répertoire** avec **tout son contenu**
+  * mais ça contient aussi **toutes les versions** successives
+* un *commit* :
+  * ça correspond à une version particulière du dépôt (de tous les fichiers du dépôt)
+
+et donc un dépôt contient autant de commits que de versions successives
+
++++
+
+### alice et bob
+
++++
+
+un exemple de workflow [sous forme de présentation pdf](media/git-workflow-animations.pdf)
+
+(le pdf fait partie du dépôt git,  
+dans `media/git-workflow-animations.pdf`)
+
++++
+
+### compte sous github
+
++++
+
+Dans la petite présentation alice a choisi `GitHub` pour rendre son travail disponible à
+tout le monde en open-source sur Internet.
+
+En effet, `GitHub` est un service web dédié à l'hébergement et à la gestion du
+développement de logiciels (open source ou pas). Il utilise le logiciel de gestion de
+versions `Git`. Il est actuellement le plus grand hébergeur de code source au monde aussi
+c'est celui que nous allons vous demander d'utiliser.
+
+Vous devrez (pas tout de suite) allez sur <https://github.com/join> pour y créez un
+compte. Il va naturellement vous falloir un nom d'utilisateur ... attention depuis janvier
+2020, il y a plus de 40 millions d'utilisateurs donc il se peut que le nom que vous
+vouliez soit déjà pris.
+
+Nous vous demanderons de nous *faire passer* vos identifiants `GitHub` vu que c'est le
+moyen que plusieurs UE vont employer pour *relever* vos projets.
+
+Pour prendre des projets dans `GitHub` vous n'avez pas besoin d'un nom d'utilisateur,
+c'est pour y mettre des projets que vous en avez besoin.
+
++++
+
+## installation
+
++++
+
+* les Windows : à ce stade, vous avez déjà installé *git for windows*, rien de plus à faire
+* les MacOS: utilisez ce lien <https://www.atlassian.com/git/tutorials/install-git#mac-os-x>
+* les linux : utilisez ce lien <https://www.atlassian.com/git/tutorials/install-git#linux>
+
++++
+
+**vérification**
+
++++
+
+pour vérifier votre installation, vous devez pouvoir taper dans le terminal
+
+```{code-cell}
+git --version
+```
+
+## digression : URL
+
++++
+
+lorsque bob copie le travail qu'alice a publié sur github, il va utiliser `git clone` (on
+va le faire dans un tout petit moment)
+
+mais il faut évidemment qu'il puisse dire à `git clone` exactement **quoi copier**, parce
+que l'Internet, c'est grand…
+
+pour ça il a besoin [d'une URL (Uniform Resource
+Locator)](https://en.wikipedia.org/wiki/URL), pour désigner le dépôt d'Alice
+
+c'est quoi une URL ? vous en connaissez déjà plein d'exemples, comme  
+http://google.com/  
+https://en.wikipedia.org/wiki/URL
+
+* le premier terme (`http` ou `https`) désigne **le protocole** à utiliser pour joindre la
+  ressource
+
+* le second morceau (`google.com` ou `en.wikipedia.org`) désigne le *hostname* qu'il faut
+  joindre; en fait on utilise un service réseau [qui s'appelle le DNS (Domain Name
+  Server](https://en.wikipedia.org/wiki/Domain_Name_System) pour traduire le nom
+  `www.google.com` en une adresse réseau (et c'est comme ça qu'en fait deux requêtes
+  n'aboutissent pas forcément sur le même serveur, heureusement d'ailleurs)
+
+* la suite est optionnelle et permet de désigner un item particulier à l'intérieur de ce
+  serveur; c'est comme ça qu'on peut ranger des milliers de pages à l'intérieur du serveur
+  wikipedia
+
++++
+
+### les URLs sur `github`
+
++++
+
+à l'intérieur du serveur github, les URLs des dépôts ressemblent toutes à celles-ci
+
+https://github.com/python/cpython  
+https://github.com/gvanrossum/cpython
+
+* le premier étage (`python` ou `gvanrossum`) désigne une organisation ou un individu
+* le second étage (`cpython`) désigne un dépôt  
+  (ici par exemple `cpython` pour l'implémetation classique du langage Python)
+
++++
+
+## setup git
 
 +++
 
@@ -40,19 +221,7 @@ ou alors vous risquez de sérieusement galérer plus tard…
 
 +++
 
-## avoir installé git
-
-évidemment... 
-
-pour vérifier, vous devez pouvoir taper dans le terminal
-
-```
-git version
-```
-
-+++
-
-## votre identité
+### votre identité
 
 pour pouvoir créer un commit, git a besoin de savoir votre nom et votre adresse de messagerie
 
@@ -65,7 +234,7 @@ git config --global user.email jean.mineur@mines-paristech.fr
 
 +++
 
-## l'éditeur
+### l'éditeur
 
 toujours pour commiter, git a besoin de savoir **quel éditeur de code** vous voulez utiliser pour entrer le message qui va avec le commit (sauf si vous utilisez l'option `-m` pour donner le message sur la ligne de commande)
 
@@ -87,7 +256,7 @@ pour que ça fonctionne, il faut que la commande `code` soit bien installée dan
 
 +++
 
-## la branche par défaut
+### la branche par défaut
 
 pour que `git init` crée une branche qui s'appelle `main` et pas `master` (qui était le défaut il y a quelques années)
 
@@ -97,14 +266,14 @@ git config --global init.defaultbranch main
 
 +++
 
-## la clé SSH
+### la clé SSH
 
 depuis Août 2021, il est devenu très compliqué d'utiliser la méthode dite 'HTTPS' pour s'authentifier chez github;
 aussi nous allons ensemble voir comment créer une clé pour la méthode SSH
 
 +++
 
-### c'est quoi SSH ?
+#### c'est quoi SSH ?
 
 au départ, un système de terminal distant pour pouvoir administrer les serveurs à distance; l'authentification est basée sur le principe d'une paire de clés publique/privée
 
@@ -116,10 +285,6 @@ et donc ce qu'on va faire tout simplement, c'est:
 
 * générer une paire de clés
 * et déposer une copie de la clé publique sur github, en l'associant à votre compte github
-
-+++
-
-### en pratique
 
 +++
 
@@ -176,6 +341,61 @@ qui ne fonctionnera pas si votre clé n'est pas correctement reconnue
 à partir de maintenant, prenez l'habitude de toujours choisir le mode d'authentification 'SSH' lorsque vous clônez un repo:
 
 <img src="media/github-choose-ssh.png" width="60%">
+
++++
+
+## cloner le dépôt du cours
+
++++
+
+vous avez maintenant tout le bagage pour pouvoir copier le dépôt du cours
+
+il vous suffit pour ça de faire (lisez bien jusqu'au bout avant de copier-coller)
+
+    git clone https://github.com/ue12-p22/intro ue12-p22-intro
+
+**Attention toutefois**
+
+* cette commande va créer sur votre disque tout un dossier (dans le dossier courant), dont le nom est `intro`
+
+* notez qu'il sera créé **dans votre répertoire de travail** (`pwd`)
+* donc commencez par **vous mettre au bon endroit**
+* le nom `intro` est déduit de la dernière partie de l'URL  
+  et si cela ne vous convient pas comme nom, vous pouvez en choisir un autre :
+
+    git clone https://github.com/ue12-p22/intro ue12-p22-intro
+
++++
+
+pour vérifier que tout s'est bien passé :
+
+    # si vous avez utilisé la deuxième forme
+    # votre répertoire local s'appelle ue12-p22-intro et pas juste intro
+    cd ue12-p22-intro
+
+    # le répertoire est rempli avec la dernière version du cours
+    cat README.md
+
++++
+
+## suivre les évolutions
+
++++
+
+pour terminer cette micro-introduction : imaginez que demain je publie des modifications
+dans ce dépôt
+
+alors pour mettre à jour votre dépôt local, il vous suffira de faire
+
+    # toujours dans le même répertoire bien sûr
+    git pull
+
++++
+
+bon en pratique il arrive que ce soit un peu plus compliqué que ça, mais c'est l'idée
+générale
+
+on creusera tout ceci dans le cours dédié à git dans quelques semaines
 
 +++ {"tags": ["level_intermediate"]}
 
@@ -248,3 +468,4 @@ enfin si vous êtes vraiment curieux, sachez que les deux familles de config son
 
 * `.gitconfig` - dans votre *home directory* - pour la config globale
 * `.git/config` - à la racine du repo - pour la config locale
+le dépôt du cours

@@ -31,15 +31,11 @@ from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
 ```
 
-# notebooks
+# notebooks sur nbhosting
 
 +++
 
-## comment lire ce notebook
-
-+++
-
-### nbhosting
+## comment lire un notebook
 
 +++
 
@@ -95,78 +91,6 @@ vous pouvez en principe activer la tables des matières en cliquant sur ce bouto
 ![](media/fig-jupyter-toc2.png)
 
 +++ {"slideshow": {"slide_type": ""}}
-
-## objectifs
-
-+++
-
-l'approche pédagogique vise en premier lieu **à vous mener à l'autonomie** en ce qui
-concerne l'utilisation des ressources digitales; c'est pourquoi nous ne sommes **pas en
-salle informatique** comme ça a pu se faire à une époque; l'objectif est que vous sachiez
-à terme utiliser **uniquement votre ordinateur** pour travailler (ce qui a été très
-pratique lors des confinements liés au covid).
-
-+++
-
-ce cours d'introduction vise à présenter, et à vous faire installer, les outils de base
-pour le cours d'informatique; il ne présente **aucune difficulté** mais vous êtes invité·e
-malgré tout à le suivre **avec une grande attention** car tous ces éléments sont
-**cruciaux pour la suite**
-
-+++ {"slideshow": {"slide_type": ""}}
-
-### objectifs globaux
-
-pour le cours d'informatique de 1ère année :
-
-* prise d'**autonomie**  
-  * par rapport à un ordinateur personnel
-  * par rapport au numérique et à la programmation
-  * focus sur quelques outils (du moment)
-* pour les mathématiques, le machine-learning et autres enseignements
-  * Python - numpy - pandas - matplotlib  
-  * notebooks Jupyter
-* workflow de gestion de projets de développement
-  * git & github
-* approfondissement langage (un parmi 3)
-  * Python
-  * C++
-  * Java
-* culture informatique
-  * notions d'algorithmique et de complexité
-  * notions sur les systèmes d'exploitation des ordinateurs (OS)   
-  * rudiments de programmation Web
-  * rudiments sur programmation parallèle
-  * rudiments sur l'utilisation du réseau
-* projet informatique
-  * en équipe
-  * posé par une personne extérieure à l'équipe d'enseignants
-
-+++
-
-### objectifs
-
-pour ce premier cours d'introduction/installation
-
-* survol ultra-rapide des concepts de base (simple, basique)
-* survol rapide et installation des outils de base  
-  * OS, terminal, dossiers et fichiers
-  * éditeur de code, markdown
-  * git (ultra-light)
-  * Python, Jupyter
-* être capable de rapatrier le cours sur votre ordi, et d'y exécuter les notebooks
-
-Notez que
-
-* le cours est **coopératif**, et pas compétitif  
-  ceux qui savent déjà **aident leurs camarades**
-
-* voyez aussi la checklist des compétences requises - [notebook
-  `2-98-checklist.md`](https://nbhosting.inria.fr/auditor/notebook/ue12-p21-python-primer/notebooks/2-98-checklist)
-
-  * à terminer pour la prochaine fois si nécessaire
-
-+++
 
 ### niveaux de lecture
 

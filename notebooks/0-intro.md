@@ -33,11 +33,70 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_stati
 
 bienvenue dans ce premier cours d'informatique
 
-ce cours d'introduction vise à vous fournir les bases pour **installer** et **utiliser** les outils qui sont utilisés pour les cours d'informatique
++++
+
+## objectifs globaux
 
 +++
 
-## installation
+l'approche pédagogique des cours d'info vise en premier lieu **à vous mener à l'autonomie** en ce qui
+concerne l'utilisation des ressources digitales; c'est pourquoi nous ne sommes **pas en
+salle informatique** comme ça a pu se faire à une époque; l'objectif est que vous sachiez
+à terme utiliser **uniquement votre ordinateur** pour travailler (ce qui a été très
+pratique lors des confinements liés au covid).
+
++++ {"slideshow": {"slide_type": ""}}
+
+en détail, pour le cours d'informatique de 1ère année :
+
+* prise d'**autonomie**  
+  * par rapport à un ordinateur personnel
+  * par rapport au numérique et à la programmation
+  * focus sur quelques outils (du moment)
+* pour les mathématiques, le machine-learning et autres enseignements
+  * Python - numpy - pandas - matplotlib  
+  * notebooks Jupyter
+* workflow de gestion de projets de développement
+  * git & github
+* approfondissement langage (un au choix)
+  * Python
+  * C++
+* culture informatique
+  * notions d'algorithmique et de complexité
+  * notions sur les systèmes d'exploitation des ordinateurs (OS)   
+  * rudiments de programmation Web
+  * rudiments sur programmation parallèle
+  * rudiments sur l'utilisation du réseau
+* projet informatique
+  * en équipe
+  * posé par une personne extérieure à l'équipe d'enseignants
+
++++
+
+## objectifs pour cette introduction
+
++++
+
+ce cours d'introduction vise à présenter, et à vous faire installer, les outils de base
+pour le cours d'informatique; il ne présente **aucune difficulté** mais vous êtes invité·e
+malgré tout à le suivre **avec une grande attention** car tous ces éléments sont
+**cruciaux pour la suite**
+
++++
+
+notez que
+
+* le cours est **coopératif**, et pas compétitif  
+  ceux qui savent déjà **aident leurs camarades**
+
+* xxx voyez aussi la checklist des compétences requises - [notebook
+  `2-98-checklist.md`](https://nbhosting.inria.fr/auditor/notebook/ue12-p21-python-primer/notebooks/2-98-checklist)
+
+* à terminer pour la prochaine fois si nécessaire
+
++++
+
+## installations
 
 nous verrons pour commencer comment installer notre pile logicielle, à savoir essentiellement
 
@@ -48,13 +107,6 @@ nous verrons pour commencer comment installer notre pile logicielle, à savoir e
   * et accessoirement, *markdown* pour la mise en forme du texte,
   * et les formules mathématiques en $\LaTeX$
 * **`git`** pour la gestion de versions; c'est un outil super-utile pour le développement, c'est indispensable que vous sachiez l'utiliser
-
-+++
-
-  
-## utilisation
-
-nous verrons aussi comment utiliser tout cela a minima, au moins pour vérifier que votre installation est correcte
 
 +++
 
