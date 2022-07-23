@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: OS - basics
+  title: OS & terminal
 ---
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy

@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: notebooks
+  title: notebooks sur nbhosting
 ---
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy

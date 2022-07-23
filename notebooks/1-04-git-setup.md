@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: git
+  title: git & setup
 ---
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
@@ -29,7 +29,7 @@ from IPython.display import HTML
 HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
 ```
 
-# git
+# git & setup
 
 +++
 
@@ -42,8 +42,7 @@ HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_stati
 son rôle est d'aider les développeurs à s'y retrouver dans la gestion des versions d'un
 projet
 
-un projet est constitué d'un ensemble de fichiers dont vous souhaitez conserver un
-historique des modifications
+un projet (on dit **un dépôt**), c'est en fait un dossier (et tout son contenu) dont on a conservé un historique des modifications
 
 +++
 
@@ -73,7 +72,7 @@ en première approximation, on peut se servir de `git` pour :
 * lorsqu'on travaille sur plusieurs améliorations en même temps  
   on peut facilement créer **des branches**  
   pour traiter les améliorations séparément  
-  avant de tout (re)mettre ensemble
+  avant de tout (re)mettre ensemble (ça s'appelle un *merge*)
 
 +++
 
@@ -174,7 +173,7 @@ mais il faut évidemment qu'il puisse dire à `git clone` exactement **quoi copi
 que l'Internet, c'est grand…
 
 pour ça il a besoin [d'une URL (Uniform Resource
-Locator)](https://en.wikipedia.org/wiki/URL), pour désigner le dépôt d'Alice
+Locator)](https://en.wikipedia.org/wiki/URL), pour désigner le dépôt d'Alice sur github
 
 c'est quoi une URL ? vous en connaissez déjà plein d'exemples, comme  
 http://google.com/  
@@ -214,7 +213,7 @@ https://github.com/gvanrossum/cpython
 
 +++
 
-avant de commencer le cours, faisons le point sur la configuration
+avant de pouvoir utiliser git, il nous faire un minimum de configuration
 
 c'est **très important** de bien **suivre toutes ces consignes**, 
 ou alors vous risquez de sérieusement galérer plus tard…
@@ -236,9 +235,10 @@ git config --global user.email jean.mineur@mines-paristech.fr
 
 ### l'éditeur
 
-toujours pour commiter, git a besoin de savoir **quel éditeur de code** vous voulez utiliser pour entrer le message qui va avec le commit (sauf si vous utilisez l'option `-m` pour donner le message sur la ligne de commande)
+toujours pour commiter: à chaque commit est associé **un message**  
+et git a besoin de savoir **quel éditeur de code** vous voulez utiliser pour entrer ce message 
 
-pour utiliser **vs-code**:
+dans notre cas nous allons utiliser **vs-code**, et pour ça on va faire
 
 ```bash
 git config --global core.editor "code --wait"
@@ -275,13 +275,16 @@ aussi nous allons ensemble voir comment créer une clé pour la méthode SSH
 
 #### c'est quoi SSH ?
 
-au départ, un système de terminal distant pour pouvoir administrer les serveurs à distance; l'authentification est basée sur le principe d'une paire de clés publique/privée
+au départ, c'est un système de terminal distant pour pouvoir administrer les serveurs à distance; l'authentification est basée sur le principe d'une paire de clés publique/privée
 
 sans entrer dans les détails, ces deux morceaux sont en gros deux éléments symétriques l'un de l'autre dans un très gros groupe fini, et on ne peut pas facilement calculer l'un à partir de l'autre  
 
-par définition, la clé publique peut être divulguée sans aucun souci au monde entier; par contre **la clé privée** doit être gardée secrète, donc **jamais exposée/copiée** en dehors de votre ordi
+par définition:
 
-et donc ce qu'on va faire tout simplement, c'est:
+* la clé publique peut être divulguée sans aucun souci au monde entier
+* par contre **la clé privée** doit être gardée secrète, donc **jamais exposée/copiée** en dehors de votre ordi
+
+et donc, ce qu'on va faire tout simplement, c'est:
 
 * générer une paire de clés
 * et déposer une copie de la clé publique sur github, en l'associant à votre compte github
@@ -301,7 +304,7 @@ ce programme va vous poser des questions, à ce stade je vous recommande de touj
 
 #### affichage de la clé publique
 
-ceci va avoir pour effet de créer deux fichiers situés dans le dossier `~/.ssh` (le tilda signifie: directement sous votre homedir); du coup vous affichez le contenu de la clé publique en faisant maintenant
+`ssh-keygen` va avoir pour effet de créer deux fichiers situés dans le dossier `~/.ssh` (le tilda signifie: directement sous votre homedir); du coup vous affichez le contenu de la clé publique en faisant maintenant
 
 ```bash
 cat ~/.ssh/id_rsa.pub
@@ -314,25 +317,21 @@ et vous copiez tout le contenu (en incluant bien tout, même le `ssh-rsa` et tou
 #### attachez la clé à votre compte github
 
 maintenant vous allez sur github  
-dans le coin en haut à gauche il y a votre icône  
+dans le coin en haut à droite il y a votre icône  
 qui ouvre un sous-menu dans lequel vous choisissez *Settings*  
-dans la partie gauche de la page qui s'ouvre, cliques 'SSH and GPG Keys'  
-et vous ajoutez une clé SSH; mettez ce que vous voulez comme titre, mais vous collez la clé publique dans la zone qui va bien
-
-<img src="media/github-profile-1.png" width="60%">
-<img src="media/github-profile-2.png" width="60%">
+dans la partie gauche de la page qui s'ouvre, cliquez 'SSH and GPG Keys'
 
 +++
 
-#### pour vérifier
+<img src="media/github-profile-1.png" width="60%">
 
-à ce stade pour tester vous pouvez tout simplement faire
++++
 
-```
-git clone ssh://git@github.com/ue12-p21/git-sandbox.git
-```
+et vous ajoutez votre clé publique SSH; mettez ce que vous voulez comme titre, mais vous collez la clé publique dans la zone qui va bien
 
-qui ne fonctionnera pas si votre clé n'est pas correctement reconnue
++++
+
+<img src="media/github-profile-2.png" width="60%">
 
 +++
 

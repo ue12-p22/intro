@@ -18,7 +18,7 @@ language_info:
     url: https://metakernel.readthedocs.io/en/latest/source/README.html
   name: bash
 nbhosting:
-  title: "v\xE9rification"
+  title: notebooks en local
 ---
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
