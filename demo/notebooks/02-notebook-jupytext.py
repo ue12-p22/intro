@@ -7,7 +7,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.11.4
+#       jupytext_version: 1.14.0
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
@@ -44,6 +44,12 @@
 print("je suis un notebook en jupytext")
 
 # %% [markdown]
-# **exercice**
+# **exercice 1**
 #
 # exécutez ce notebook depuis le terminal
+
+# %% [markdown]
+# **exercice 2**
+#
+# créez un nouveau notebook jupytext en vous inspirant de 
+# ![](create-a-text-notebook.png)

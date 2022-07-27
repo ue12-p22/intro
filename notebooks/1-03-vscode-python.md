@@ -556,13 +556,13 @@ dans le répertoire de votre choix, ouvrez *vs-code* et créez un fichier qui s'
 `fact.py` contenant ce texte (n'hésitez pas à copier-coller) :
 
 ```{code-cell}
-cat ../demo/fact.py
+cat ../demo/python/fact.py
 ```
 
 et dans le même répertoire lancez python pour exécuter ce programme, et donc calculer et afficher le factoriel de deux nombres
 
 ```{code-cell}
-python ../demo/fact.py 10
+python ../demo/python/fact.py 10
 ```
 
 #### afficher le numéro de version de Python
@@ -734,13 +734,13 @@ voici le code, et ce qui se produit si on essaie de le faire tourner
 ```{code-cell}
 :cell_style: split
 
-cat ../demo/fact-broken.py
+cat ../demo/python/fact-broken.py
 ```
 
 ```{code-cell}
 :cell_style: split
 
-python ../demo/fact-broken.py
+python ../demo/python/fact-broken.py
 ```
 
 je vous demande en exercice de trouver l'erreur en question
