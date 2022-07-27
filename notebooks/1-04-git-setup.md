@@ -236,7 +236,7 @@ git config --global user.email jean.mineur@mines-paristech.fr
 ### l'éditeur
 
 toujours pour commiter: à chaque commit est associé **un message**  
-et git a besoin de savoir **quel éditeur de code** vous voulez utiliser pour entrer ce message 
+et git a besoin de savoir **quel éditeur de code** vous voulez utiliser pour entrer ce message
 
 dans notre cas nous allons utiliser **vs-code**, et pour ça on va faire
 
