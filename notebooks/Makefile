@@ -2,15 +2,7 @@ NOTEBOOKS = $(shell git ls-files [0-9]*)
 
 all: style
 
-########## STYLE
-# we need 2 forms:
-# for jupyterbook, _static/style.css is a pure CSS file
-# the local variant style.html is derived from the former
-# but embedded in a <style> tag
-style: _static/style.html
-
-_static/style.html: _static/style.css
-	(echo '<style>'; cat $^; echo '</style>') > $@
+include Makefile.style
 
 ########## NORMALIZING
 # is about applying applying the contents
