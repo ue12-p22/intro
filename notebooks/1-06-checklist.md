@@ -40,11 +40,11 @@ un résumé des compétences attendues pour commencer les cours d'info
 
 voici une vidéo assez courte qui vous montre le minimum de choses que vous devriez pouvoir faire sur votre ordi, afin de vérifier que vous avez bien tout installé:
 
-<https://www.youtube.com/watch?v=vZUUQLlBPIs>
+<https://youtu.be/i_ZcP7iNw-U>
 
-<div class="note pink">
-    xxx je vais la refaire complètement... xxx
-</div>
++++
+
+## les compétences
 
 +++
 
@@ -52,7 +52,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## terminal
+### terminal
 
 * lancer un terminal (bash ou git bash)
 * trouver votre répertoire courant, changer de répertoire courant
@@ -62,7 +62,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## organisation en dossiers
+### organisation en dossiers
 
 * se choisir une façon de ranger les dossiers sous un dossier principal
 * savoir rapidement ouvrir un explorateur sur le dossier principal
@@ -70,7 +70,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## éditeur de code *vs-code*
+### éditeur de code *vs-code*
 
 * après avoir installé l'éditeur vscode, savoir :
 * le lancer rapidement dans le dossier principal
@@ -85,7 +85,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## Python / pip
+### Python / pip
 
 * avoir installé un environnement Python
 * afficher le numéro de version de Python
@@ -98,7 +98,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## git
+### git
 
 * avoir installé `git`; savoir :
 * cloner un dépôt trouvé sur github
@@ -107,7 +107,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## Jupyter
+### Jupyter
 
 * avoir installé jupyter
 * avoir installé jupytext
@@ -120,7 +120,7 @@ voici maintenant une liste un peu plus complète des compétences qui sont atten
 
 +++
 
-## notebooks du cours
+### notebooks du cours
 
 idéalement à la fin de cette leçon vous devriez être capable
 
@@ -134,7 +134,7 @@ idéalement à la fin de cette leçon vous devriez être capable
 
 +++ {"tags": ["level_intermediate"]}
 
-## Python sous vs-code
+### Python sous vs-code
 
 sous vs-code, savoir :
 
@@ -147,16 +147,18 @@ notez que cela suppose d'avoir :
 * configuré l'interpréteur Python pour vs-code
 * installé pylint
 
-+++ {"tags": ["level_intermediate"]}
++++
 
-## exercices optionnel
+## exercices optionnels
 
 ceux qui sont très en avance peuvent
 
 1. d'abord, aider leurs camarades
-1. et ensuite, traiter l'exercice suivant :
+1. et ensuite, traiter un des exercices suivants :
 
-**exercice**
++++
+
+### exo 1 (assez libre)
 
 * créer un notebook (Python, pas bash)
 * dans lequel vous traitez, une peu comme le fait le notebook de démonstration, un tout
@@ -175,9 +177,13 @@ suggestions de sujets possibles:
 
 +++
 
+### exo 2 (plus dirigé)
+
++++
+
 même consigne, pour le calcul de la visibilité à une altitude donnée :
 
-vous êtes sur le globe terrestre au point $B$, c'est-à-dire à une altitude $h$, vous devez
+vous êtes sur le globe terrestre au point $B$, à une altitude $h$, vous devez
 calculer la distance à laquelle se situe l'horizon (on admet que c'est la mer tout autour
 de vous)
 

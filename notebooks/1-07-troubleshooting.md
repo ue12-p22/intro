@@ -17,7 +17,7 @@ language_info:
   nbconvert_exporter: python
   pygments_lexer: ipython3
 nbhosting:
-  title: checklist
+  title: troubleshooting
 ---
 
 Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
