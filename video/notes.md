@@ -2,10 +2,13 @@
 
 ```bash
 pwd / ls / cd
+mkdir git
 cd git
 ```
 
 # git
+
+s'assurer qu'on est bien loggé dans github.com
 
 copier l'URL sur github (**toujours** choisir SSH)  
 puis taper
@@ -18,7 +21,7 @@ cd ue12-intro
 puis plus tard, pour mettre à jour ultérieurement si le prof a publié des nouveautés
 
 ```bash
-git clone
+git pull
 ```
 
 # python
@@ -32,11 +35,19 @@ python fact.py
 ipython --version
 ipython
 ```
+
 # jupyter
 
 ```
+# avec .. on peut remonter 
+# dans le dossier parent
+cd ..
+pwd
 cd ../notebooks
+pwd
+
 jupyter --version
+
 jupyter notebook
 # le terminal est occupé, en créer un autre...
 ```
@@ -46,5 +57,9 @@ jupyter notebook
 ```bash
 code .
 # et comment choisir son environnement
-pip install -r requirements.txt
 ```
+
+# pip
+
+cd ~/git/ue12-p22
+pip install -r requirements.txt
