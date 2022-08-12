@@ -42,14 +42,20 @@ dans tous les cas, essayez d'abord de trouver par vous même avant de demander d
 
 +++
 
-* le plus probable, vous n'avez pas bien coché la case `mettre à jour $PATH` lors de l'installation de miniconda; réinstallez, relancez un terminal, et réessayez
+* tapez dans votre terminal
 
-* ou alors, tapez dans votre terminal
+  ```bash
+  conda init bash
+  ```
+  avant de lancer un nouveau terminal et de réessayez
 
-```bash
-conda init bash
-```
-avant de lancer un nouveau terminal et de réessayez
+  <div class=note>
+    
+  (si vous êtes sur mac, il se peut que votre shell soit `zsh` et pas `bash`; pas de souci pour suivre le cours avec `zsh`, mais par contre vous devez peut-être taper ici `conda init zsh`)
+    
+  </div>
+
+* si ce n'est pas cela, le plus probable est que vous n'avez pas bien coché la case `mettre à jour $PATH` lors de l'installation de miniconda; réinstallez, relancez un terminal, et réessayez
 
 +++
 
