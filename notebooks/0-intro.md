@@ -89,8 +89,8 @@ notez que
 * le cours est **coopératif**, et pas compétitif  
   ceux qui savent déjà **aident leurs camarades**
 
-* xxx voyez aussi la checklist des compétences requises - [notebook
-  `2-98-checklist.md`](https://nbhosting.inria.fr/auditor/notebook/ue12-p21-python-primer/notebooks/2-98-checklist)
+* voyez aussi la liste des compétences requises - [notebook
+  `1-06-checklist.md`](https://nbhosting-dev.inria.fr/builds/ue12-p22-intro/handouts/latest/1-06-checklist.html) qui contient notamment une vidéo de checklist
 
 * à terminer pour la prochaine fois si nécessaire
 
@@ -107,6 +107,23 @@ nous verrons pour commencer comment installer notre pile logicielle, à savoir e
   * et accessoirement, *markdown* pour la mise en forme du texte,
   * et les formules mathématiques en $\LaTeX$
 * **`git`** pour la gestion de versions; c'est un outil super-utile pour le développement, c'est indispensable que vous sachiez l'utiliser
+
+Voici un parcours accéléré pour faire toutes les installations:
+
+* git for windows (Windows seulement)  
+ <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-os-terminal.html#installation-de-bash>
+* vs-code (tous)  
+<https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-vscode-python.html#installation-editeur-de-code>
+* miniconda (tous)  
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-vscode-python.html#installation-de-base>
+* instllation git (tous sauf Windows)  
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#installation>
+* configuration git (tous)  
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#setup-git>
+* cloner le dépôt du cours  
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#cloner-le-depot-du-cours>
+* ouvrir les notebooks sur votre ordi  
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-05-local-notebooks.html#notebooks-en-local>
 
 +++
 
