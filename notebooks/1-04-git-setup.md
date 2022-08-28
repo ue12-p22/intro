@@ -372,9 +372,15 @@ et vous ajoutez votre clé publique SSH; mettez ce que vous voulez comme titre, 
 
 ### pour conclure
 
-à partir de maintenant, prenez l'habitude de toujours choisir le mode d'authentification 'SSH' lorsque vous clônez un repo:
+à ce stade vous pouvez naviguer jusqu'au cours; pour cela, repartez de l'organisation qui va bien, ici `ue12-p22`, c'est-à–dire ici
+
+<img src="media/github-orga.png" width="60%">
+
+puis allez dans le cours (ici `intro`), et copiez l'URL du cours
 
 <img src="media/github-choose-ssh.png" width="60%">
+
+à partir de maintenant, prenez l'habitude de toujours choisir le mode d'authentification 'SSH' lorsque vous clônez un repo !
 
 +++
 
