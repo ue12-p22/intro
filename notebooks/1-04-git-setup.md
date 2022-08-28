@@ -142,25 +142,6 @@ c'est pour y mettre des projets que vous en avez besoin.
 
 +++
 
-## installation
-
-+++
-
-* les Windows : à ce stade, vous avez déjà installé *git for windows*, rien de plus à faire
-* les MacOS et linux, utilisez ce lien:  
-  <https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git>
-+++
-
-**vérification**
-
-+++
-
-pour vérifier votre installation, vous devez pouvoir taper dans le terminal
-
-```{code-cell}
-git --version
-```
-
 ## digression : URL
 
 +++
@@ -207,6 +188,26 @@ https://github.com/gvanrossum/cpython
   (ici par exemple `cpython` pour l'implémetation classique du langage Python)
 
 +++
+
+## installation
+
++++
+
+* les Windows : à ce stade, vous avez déjà installé *git for windows*, rien de plus à faire
+* les MacOS et linux, utilisez ce lien:  
+  <https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git>
+
++++
+
+**vérification**
+
++++
+
+pour vérifier votre installation, vous devez pouvoir taper dans le terminal
+
+```{code-cell}
+git --version
+```
 
 ## setup git
 
@@ -265,14 +266,49 @@ git config --global init.defaultbranch main
 
 +++
 
-### la clé SSH
+## pour tester déjà tout ceci
+
++++
+
+pour tester tout ceci, procédez comme suit, depuis le terminal (bash bien sûr):
+
+* créez un dossier vierge (souvenez-vous de la commande `mkdir`)
+* allez dans ce dossier (avec `cd`) et créez un dépît git
+  ```bash
+  cd le-dossier
+  git init
+  ```
+* ouvrez l'éditeur de code (avec `code .`)
+  ```bash
+  code .
+  ```
+  puis dans vs-code, créez le fichier `readme.md` avec une ou deux lignes de texte, sauvez-le
+* de retour dans le terminal, faites
+  ```bash
+  git add readme.md
+  git commit
+  ```
+* vous devez voir une fenêtre s'ouvrir dans vs-code; allez-y, tapez un message sur la première ligne
+  (par exemple `mon premier commit`), puis faites `Control-S` auivi de `Control-W` (ou Command sur mac)
+* et là si tout se passe bien: la fenêtre dans vs-code se ferme, et si vous retournez dans le terminal vous voyez que le `git commit` est terminé
+* à ce stade faites simplement
+  ```bash
+  git log
+  ```
+  et vérifiez:
+  * que votre nom et mail est correct
+  * et que la branche s'appelle bien `main`
+
++++
+
+## la clé SSH
 
 depuis Août 2021, il est devenu très compliqué d'utiliser la méthode dite 'HTTPS' pour s'authentifier chez github;
 aussi nous allons ensemble voir comment créer une clé pour la méthode SSH
 
 +++
 
-#### c'est quoi SSH ?
+### c'est quoi SSH ?
 
 au départ, c'est un système de terminal distant pour pouvoir administrer les serveurs à distance; l'authentification est basée sur le principe d'une paire de clés publique/privée
 
@@ -290,7 +326,7 @@ et donc, ce qu'on va faire tout simplement, c'est:
 
 +++
 
-#### création de la paire de clés
+### création de la paire de clés
 
 pour générer la clé publique vous faites simplement dans le terminal
 ```bash
@@ -301,7 +337,7 @@ ce programme va vous poser des questions, à ce stade je vous recommande de touj
 
 +++
 
-#### affichage de la clé publique
+### affichage de la clé publique
 
 `ssh-keygen` va avoir pour effet de créer deux fichiers situés dans le dossier `~/.ssh` (le tilda signifie: directement sous votre homedir); du coup vous affichez le contenu de la clé publique en faisant maintenant
 
@@ -313,7 +349,7 @@ et vous copiez tout le contenu (en incluant bien tout, même le `ssh-rsa` et tou
 
 +++
 
-#### attachez la clé à votre compte github
+### attachez la clé à votre compte github
 
 maintenant vous allez sur github  
 dans le coin en haut à droite il y a votre icône  
@@ -334,7 +370,7 @@ et vous ajoutez votre clé publique SSH; mettez ce que vous voulez comme titre, 
 
 +++
 
-#### pour conclure
+### pour conclure
 
 à partir de maintenant, prenez l'habitude de toujours choisir le mode d'authentification 'SSH' lorsque vous clônez un repo:
 
