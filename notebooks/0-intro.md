@@ -90,7 +90,7 @@ notez que
   ceux qui savent déjà **aident leurs camarades**
 
 * voyez aussi la liste des compétences requises - [notebook
-  `1-06-checklist.md`](https://nbhosting-dev.inria.fr/builds/ue12-p22-intro/handouts/latest/1-06-checklist.html) qui contient notamment une vidéo de checklist
+  `1-06-checklist.md`](https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-06-checklist.html) qui contient notamment [une vidéo YouTube en guise de checklist](https://youtu.be/i_ZcP7iNw-U)
 
 * à terminer pour la prochaine fois si nécessaire
 
