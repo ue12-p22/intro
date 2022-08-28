@@ -147,9 +147,8 @@ c'est pour y mettre des projets que vous en avez besoin.
 +++
 
 * les Windows : à ce stade, vous avez déjà installé *git for windows*, rien de plus à faire
-* les MacOS: utilisez ce lien <https://www.atlassian.com/git/tutorials/install-git#mac-os-x>
-* les linux : utilisez ce lien <https://www.atlassian.com/git/tutorials/install-git#linux>
-
+* les MacOS et linux, utilisez ce lien:  
+  <https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git>
 +++
 
 **vérification**
