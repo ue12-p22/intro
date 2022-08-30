@@ -61,17 +61,6 @@ On y va. Le site est là <https://code.visualstudio.com/>. Vous voulez installer
 falloir que vous alliez dans une section *download* ... vous la voyez ? à vous de jouer
 maintenant
 
-**note**: pour les éventuelles questions posées lors de l'installation, il y a ci-dessous une copie d'écran, mais seulement pour les cas où les réponses par défaut doivent être modifiées
-
-+++
-
-**conseil**
-
-en cochant ces cases lors de l'installation, vous pourrez lancer vs-code avec un clic
-droit depuis un dossier ou un fichier
-
-![](media/fig-explorer-vs-code.png)
-
 +++
 
 ### micro-démo vs-code

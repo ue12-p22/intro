@@ -110,15 +110,18 @@ nous verrons pour commencer comment installer notre pile logicielle, à savoir e
 
 Voici un parcours accéléré pour faire toutes les installations:
 
-* git for windows (Windows seulement)  
- <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-os-terminal.html#installation-de-bash>
-* vs-code (tous)  
+* installation de git
+  * **(Windows seulement)** git for windows (git + bash)  
+    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-os-terminal.html#installation-de-bash>
+  * **(tous sauf Windows)** installation git seul  
+    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#installation>
+
+puis ensuite, pour tous les OS
+* vs-code  
 <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-vscode-python.html#installation-editeur-de-code>
-* miniconda (tous)  
+* miniconda  
   <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-vscode-python.html#installation-de-base>
-* instllation git (tous sauf Windows)  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#installation>
-* configuration git (tous)  
+* configuration git  
   <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#setup-git>
 * cloner le dépôt du cours  
   <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-git-setup.html#cloner-le-depot-du-cours>
