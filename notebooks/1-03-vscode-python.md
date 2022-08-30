@@ -490,6 +490,11 @@ sera déjà affiché lorsque vous taperez vos commandes
 
 ```console
 $ type python
+```
+
+(attention à ne pas coller le `$`, donc)  
+qui doit vous répondre quelque chose comme
+```
 python is /c/Users/Thierry Parmentelat/miniconda3/python
 ```
 
