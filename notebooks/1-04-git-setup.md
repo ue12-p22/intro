@@ -220,16 +220,29 @@ ou alors vous risquez de sérieusement galérer plus tard…
 
 +++
 
-### votre identité
-
-pour pouvoir créer un commit, git a besoin de savoir votre nom et votre adresse de messagerie
+### tout d'un coup
 
 dans votre terminal, entrez les commandes suivantes, en remplaçant évidemment...
 
 ```bash
+# remplacez ici vos nom et prénom et mail
 git config --global user.name "Jean Mineur"
 git config --global user.email jean.mineur@mines-paristech.fr
+
+# peut être copié tel quel
+git config --global core.editor "code --wait"
+git config --global init.defaultbranch main
 ```
+
+pour comprendre pourquoi on fait ça, lisez les sections suivantes:
+
++++
+
+### votre identité
+
+pour pouvoir créer un commit, git a besoin de savoir votre nom et votre adresse de messagerie
+
+c'est le propos des deux premières commandes ci-dessus, qui définissent `user.name` et `user.email`
 
 +++
 
@@ -238,31 +251,23 @@ git config --global user.email jean.mineur@mines-paristech.fr
 toujours pour commiter: à chaque commit est associé **un message**  
 et git a besoin de savoir **quel éditeur de code** vous voulez utiliser pour entrer ce message
 
-dans notre cas nous allons utiliser **vs-code**, et pour ça on va faire
-
-```bash
-git config --global core.editor "code --wait"
-```
+dans notre cas nous allons utiliser **vs-code**, et c'est le propos du réglage qui s'appelle `core.editor`
 
 **remarque**  
 lorsque vous faites par exemple `git commit` et que l'éditeur se lance pour vous laisser entrer le message, le programme dans le terminal **attend que vous ayez fini** d'entrer le message  
-et pour lui dire "ça y est, j'ai fini, on peut finir le commit", ce que vous devez faire, c'est simplement de
+et pour lui dire "ça y est, j'ai fini, on peut finaliser le commit", ce que vous devez faire, c'est simplement de  
 ***fermer l'onglet qui édite le message***   
 il ne suffit pas de simplement sauver le fichier (c'est nécessaire bien sûr, mais pas suffisant)  
 et dans l'autre sens ce n'est pas non plus la peine de terminer toute votre session vs-code (vous pouvez avoir plein d'autres fichiers ouverts à ce moment-là dans vs-code)
 
 **note**  
-pour que ça fonctionne, il faut que la commande `code` soit bien installée dans votre PATH; si vous avez `command not found` quand vous tapez `code .` dans votre terminal, allez dans vs-code, ouvrez la palette et cherchez `Shell Command: Install 'code' command in PATH`
+pour que ça fonctionne, il faut bien sûrœ que la commande `code` soit bien installée dans votre PATH; si vous avez `command not found` quand vous tapez `code .` dans votre terminal, allez dans vs-code, ouvrez la palette et cherchez `Shell Command: Install 'code' command in PATH`
 
 +++
 
 ### la branche par défaut
 
-pour que `git init` crée une branche qui s'appelle `main` et pas `master` (qui était le défaut il y a quelques années)
-
-```bash
-git config --global init.defaultbranch main
-```
+enfin la dernière commande de configuration, celle qui définit `init.defaultbranch`, est là pour que lors de la création d'un repo avec `git init`, on crée une branche qui s'appelle `main` et pas `master` (qui était le défaut il y a quelques années)
 
 +++
 
