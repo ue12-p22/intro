@@ -157,14 +157,25 @@ une des premières choses que nous apprendrons, ce sera donc
 
 +++
 
-### `nbhosting`
+### supports HTML cherchables 
 
-vous aurez également accès à une plateforme hébergée sur <https://nbhosting.inria.fr>) où ces contenus seront accessibles sans installation préalable; cette facilité est conçue essentiellement pour les premiers cours, de sorte que l'on puisse avancer avant que toute la promo soit entièrement bien installée sur les ordis perso
+les contenus des notebooks sont également publiés sur *nbhosting* dans un format `HTML`; il s'agit bien sûr d'une version statique (on ne peut plus modifier le code), mais par contre on peut y faire des recherches globalement, ce qui est pratique dans les cours qui contiennent un grand nombre de notebooks
 
-il devrait être entendu que le mode d'utilisation "normal" des supports est **en local sur votre ordi**, le recours à nbhosting est conçu comme transitoire, et devrait disparaitre progressivement au cours de l'année
+le point d'entrée se situe ici:
+
+<https://nbhosting.inria.fr/public/mines-p22/>
 
 +++
 
-### supports HTML cherchables 
+### `nbhosting`
 
-la plupart du temps, les contenus notebooks sont également publiés sur *nbhosting* dans un format `HTML`; il s'agit bien sûr d'une version statique (on ne peut plus modifier le code), mais par contre on peut y faire des recherches globalement, ce qui est pratique dans les cours qui contiennent un grand nombre de notebooks
+enfin les années précédentes, nous avions utilisé une plateforme hébergée sur <https://nbhosting.inria.fr>, où les notebooks étaient accessibles en *live* (code modifiable et exécutable) sans installation préalable; 
+il s'agissait essentiellement d'une facilité pour les premiers cours, de sorte que l'on puisse avancer avant que toute la promo soit entièrement bien installée sur les ordis perso.
+
+il devrait être entendu que le mode d'utilisation "normal" des notebooks est **en local sur votre ordi**,
+aussi cette année 2022, nous allons essayer de nous passer totalement de nbhosting dans ce mode (il continue à servir les versions html, mais pas d'accès avec login); 
+on pourra envisager de donner un accès à ce service aux élèves qui auraient des difficultés insurmontables avec leurs installations
+
++++
+
+---
