@@ -100,7 +100,7 @@ rare en informatique), venez nous voir plus tard pour que nous vous aidions.
 ***
 
 * montrer comment :
-  * chercher une extension  (prétexte : l'extension Python)
+  * chercher une extension  (prétexte : l'extension 'Markdown All in One' et/ou Python)
   * installer/désinstaller
   * activer/désactiver une nouvelle extension
 
@@ -109,7 +109,7 @@ rare en informatique), venez nous voir plus tard pour que nous vous aidions.
 * montrer comment :
   * passer d'une application à une autre avec `⌥ ⇥` (Alt-Tab)
   * typiquement pour basculer entre vscode et terminal
- 
+
 ***
 
 * de retour dans vs-code, montrer la palette :
@@ -126,7 +126,7 @@ rare en informatique), venez nous voir plus tard pour que nous vous aidions.
 +++
 
 pour plus de détails, voir aussi  
-https://code.visualstudio.com/docs/getstarted/userinterface
+<https://code.visualstudio.com/docs/getstarted/userinterface>
 
 +++
 

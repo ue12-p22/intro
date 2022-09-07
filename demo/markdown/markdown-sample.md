@@ -38,3 +38,23 @@ $$
 \forall x \in \mathbb{R}, \forall \epsilon \in \mathbb{R}^+, \exists\alpha\in\mathbb{R}^+ \\
  |x'-x| < \alpha\implies |f(x')-f(x)| < \epsilon
 $$
+
+## images
+
+pensez à utiliser l'extension vs-code 'Draw.io Integration' pour produire vos images
+
+### format png (bitmap)
+![](../../notebooks/media/fig-vscode-markdown.png)
+
+### format svg (vectoriel)
+![](../../notebooks/media/logo-python.svg)
+
+## divers
+
+ligne horizontale
+
+---
+
+ou aussi
+
+***
