@@ -26,7 +26,7 @@ Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 ```{code-cell}
 %%python
 from IPython.display import HTML
-HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
+HTML(filename="_static/style.html")
 ```
 
 # git & setup
@@ -283,24 +283,29 @@ pour tester tout ceci, procédez comme suit, depuis le terminal (bash bien sûr)
   cd le-dossier
   git init
   ```
+
 * ouvrez l'éditeur de code (avec `code .`)
   ```bash
   code .
   ```
   puis dans vs-code, créez le fichier `readme.md` avec une ou deux lignes de texte, sauvez-le
+
 * de retour dans le terminal, faites
   ```bash
   git add readme.md
   git commit
   ```
+
 * vous devez voir une fenêtre s'ouvrir dans vs-code; allez-y, tapez un message sur la première ligne
   (par exemple `mon premier commit`), puis faites `Control-S` auivi de `Control-W` (ou Command sur mac)
+
 * et là si tout se passe bien: la fenêtre dans vs-code se ferme, et si vous retournez dans le terminal vous voyez que le `git commit` est terminé
 * à ce stade faites simplement
   ```bash
   git log
   ```
   et vérifiez:
+
   * que votre nom et mail est correct
   * et que la branche s'appelle bien `main`
 

@@ -28,7 +28,7 @@ Licence CC BY-NC-ND, Thierry Parmentelat & Valérie Roy
 
 %%python
 from IPython.display import HTML
-HTML(url="https://raw.githubusercontent.com/ue12-p22/intro/main/notebooks/_static/style.html")
+HTML(filename="_static/style.html")
 ```
 
 # vs-code et Python
@@ -445,7 +445,7 @@ choisissez à la place le dossier qu'on a créé dans l'étape précédente, c'e
 
 +++
 
-<div style="background-color:#cccccc; border-radius: 6px; margin:12px; padding: 12px;">
+<div class=outline>
 
 en théorie c'est tout ce qu'il y a à faire pour installer conda
 
@@ -510,9 +510,9 @@ afficher un texte, puis quitter l'interpréteur.
 
 ***
 
-<div style="background-color:#cccccc; border-radius: 6px; margin:12px; padding: 12px;">
+<div class=outline>
 
-<span style="background-color:red; padding:4px; border-radius: 4px;">quelques limitations connues :</span>
+<span class="red-pill">quelques limitations connues :</span>
 
 * lancer simplement `python` dans `GitBash` ne fonctionne pas  
   (le programme n'affiche pas le prompt et semble boucler sans rien afficher)
