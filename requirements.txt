@@ -18,6 +18,5 @@ nb-courselevels
 
 # jupyter extensions
 #
-rise
 jupyter-contrib-nbextensions
 
