@@ -483,7 +483,7 @@ créer/activer/détruire des environnements multiples; on entend par environneme
 les commandes utiles sont
 
 * `conda env list`
-* `conda create -n mon_environnement python=3.8`
+* `conda create -n mon_environnement python=3.10`
 * `conda env remove -n mon_environnement`
 
 +++
@@ -529,10 +529,10 @@ base                  *  /Users/tparment/miniconda3
 
 +++
 
-#### j'en crée un nouveau avec Python-3.8
+#### j'en crée un nouveau avec Python-3.10
 
 ```
-[base] ~ $ conda create -n demo-py38 python=3.8
+[base] ~ $ conda create -n demo-py310 python=3.10
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 <snip ...>
@@ -546,7 +546,7 @@ Solving environment: done
 # conda environments:
 #
 base                  *  /Users/tparment/miniconda3
-demo-py38                /Users/tparment/miniconda3/envs/demo-py38
+demo-py310                /Users/tparment/miniconda3/envs/demo-py310
 <snip...>
 ```
 
@@ -555,8 +555,8 @@ demo-py38                /Users/tparment/miniconda3/envs/demo-py38
 ##### pour entrer dans le nouvel environnement
 
 ```
-[base] ~ $ conda activate demo-py38
-[demo-py38] ~ $
+[base] ~ $ conda activate demo-py310
+[demo-py310] ~ $
 ```
 
 +++
@@ -566,7 +566,7 @@ demo-py38                /Users/tparment/miniconda3/envs/demo-py38
 très peu de choses
 
 ```
-[demo-py38] ~ $ pip list
+[demo-py310] ~ $ pip list
 Package    Version
 ---------- -------------------
 certifi    2020.4.5.1
@@ -579,14 +579,14 @@ wheel      0.34.2
 
 #### on y installe ce qu'on veut
 ```
-[demo-py38] ~ $ pip install numpy==1.15.3
+[demo-py310] ~ $ pip install numpy==1.15.3
 ```
 
 +++
 
 #### la version de python
 ```
-[demo-py38] ~ $ python --version
+[demo-py310] ~ $ python --version
 Python 3.8.2
 ```
 
@@ -594,7 +594,7 @@ Python 3.8.2
 
 #### sortir 
 ```
-[demo-py38] ~ $ conda deactivate
+[demo-py310] ~ $ conda deactivate
 [base] ~ $
 ```
 
@@ -619,9 +619,9 @@ Version: 1.18.1
 
 #### pour détruire l'environnement en question
 ```
-[base] ~ $ conda env remove -n demo-py38
+[base] ~ $ conda env remove -n demo-py310
 
-Remove all packages in environment /Users/tparment/miniconda3/envs/demo-py38:
+Remove all packages in environment /Users/tparment/miniconda3/envs/demo-py310:
 ```
 
 +++
@@ -630,7 +630,7 @@ Remove all packages in environment /Users/tparment/miniconda3/envs/demo-py38:
 
 +++
 
-* créez un nouvel environnement miniconda avec Python-3.8
+* créez un nouvel environnement miniconda avec Python-3.10
 * de retour dans vs-code, sélectionnez cet environnement
 
 notez que ce réglage est associé au *workspace* vs-code
@@ -641,3 +641,32 @@ lui-même : la liste des fichiers en cours d'édition, les onglets ouverts, etc
 pour expérimenter, créez une session vs-code dans un directory, choisissez votre
 environnement Python, sortez de la session; ré-ouvrez vs-code sur le même répertoire, vous
 devez retrouver ce réglage
+
++++
+
+### note à propos de conda-forge
+
++++
+
+<div class=note>
+
+**Décembre 2022**:
+
+alors que la version 3.11 est sortie depuis 1 mois, j'essaie de créer
+un environnement avec python-3.11 et je n'y arrive pas tout de suite
+
+```
+PackagesNotFoundError: The following packages are not available from current channels:
+```
+
+pour que cela fonctionne il me faut faire
+
+```bash
+conda config --add channels conda-forge
+```
+
+ce qui ajoute le 'canal' `conda-forge` aux recherches
+
+Cela va sans doute se normaliser dans le futur, mais au cas où...
+
+</div>
