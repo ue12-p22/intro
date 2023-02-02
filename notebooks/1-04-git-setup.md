@@ -232,6 +232,10 @@ git config --global user.email jean.mineur@mines-paristech.fr
 # peut être copié tel quel
 git config --global core.editor "code --wait"
 git config --global init.defaultbranch main
+
+# enfin par commodité - voir le cours git
+git config --global alias.l "log --oneline --graph"
+git config --global alias.la "log --oneline --graph --all"
 ```
 
 pour comprendre pourquoi on fait ça, lisez les sections suivantes:
