@@ -432,6 +432,16 @@ pour vérifier que tout s'est bien passé :
 
 +++
 
+### si ça échoue
+
++++
+
+si vous n'arrivez pas à cloner le repo, il y a pas mal de documentation sur github, je vous propose de commencer avec ceci pour vérifier votre setup SSH:
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection
+
++++
+
 ## suivre les évolutions
 
 +++
