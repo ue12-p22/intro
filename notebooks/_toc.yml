@@ -6,4 +6,7 @@ parts:
 - caption: installations
   chapters:
   - glob: 1-*-nb
-root: 0-intro-nb
+- caption: "compl\xE9ments"
+  chapters:
+  - glob: 2-*-nb
+root: 0-00-intro-nb
