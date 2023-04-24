@@ -1,6 +1,6 @@
 format: jb-book
-root: 0-intro
+root: 0-intro-nb
 parts:
 - caption: "installations"
   chapters:
-  - glob: 1-*
+  - glob: 1-*-nb
