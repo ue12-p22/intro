@@ -6,7 +6,6 @@ include Makefile.style
 
 include Makefile.norm
 
-book:
-	jupyter-book build .
+include Makefile.toc
 
-.PHONY: all book
+include Makefile.book
