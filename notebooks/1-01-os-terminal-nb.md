@@ -587,12 +587,12 @@ et en dessous de ce dossier principal vous allez ranger vos différents dossiers
 au contraire :
 
 * si vous créez un dossier par sujet avec un nom explicite
-  * par exemple ce cours pourrait s'appeler `ue12-python-numerique`
+  * par exemple ce cours pourrait s'appeler `ue12-p22-python-numerique`
 * et que vous regroupez tous ces dossiers dans **un seul répertoire**,
 * ça peut largement suffire
 
 du coup créez plutôt un dossier  
-`/User/jeanmineur/Desktop/git/ue12-python-numerique`
+`/User/jeanmineur/Desktop/git/ue12-p22-python-numerique`
 
 +++
 

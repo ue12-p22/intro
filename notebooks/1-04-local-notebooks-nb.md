@@ -254,10 +254,9 @@ faire
 
 puis vous pouvez
 
-* ouvrir le notebook de démonstration  (*2-10-demonstration.md*)  
+* ouvrir un des notebooks de démonstration (dans le dossier `demo/notebooks`)
   (je ne recommande pas forcément de commencer avec le présent notebook, car il utilise un
   kernel `bash` qui n'est pas standard…)
-
 * l'exécuter localement
 * et vous amuser à le modifier
 

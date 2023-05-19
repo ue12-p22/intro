@@ -90,7 +90,7 @@ notez que
   ceux qui savent déjà **aident leurs camarades**
 
 * voyez aussi la liste des compétences requises - [notebook
-  `1-06-checklist.md`](https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-06-checklist.html) qui contient notamment [une vidéo YouTube en guise de checklist](https://youtu.be/i_ZcP7iNw-U)
+  `2-02-checklist-nb.md`](https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-06-checklist-nb.html) qui contient notamment [une vidéo YouTube en guise de checklist](https://youtu.be/i_ZcP7iNw-U)
 
 * à terminer pour la prochaine fois si nécessaire
 
@@ -112,27 +112,27 @@ Voici un parcours accéléré pour faire toutes les installations:
 
 * installation de git
   * **(Windows seulement)** git for windows (git + bash)  
-    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-01-os-terminal.html#installation-de-bash>
+    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-01-os-terminal-nb.html#installation-de-bash>
 
   * **(tous sauf Windows)** installation git seul  
-    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup.html#installation>
+    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#installation>
 
 puis ensuite, pour tous les OS
 
 * vs-code  
-<https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python.html#installation-editeur-de-code>
+<https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-editeur-de-code>
 
 * miniconda  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python.html#installation-de-base>
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-de-base>
 
 * configuration git  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup.html#setup-git>
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#setup-git>
 
 * cloner le dépôt du cours  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup.html#cloner-le-depot-du-cours>
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#cloner-le-depot-du-cours>
 
 * ouvrir les notebooks sur votre ordi  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-local-notebooks.html#notebooks-en-local>
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-local-notebooks-nb.html#notebooks-en-local>
 
 +++
 
