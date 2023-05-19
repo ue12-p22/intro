@@ -49,28 +49,46 @@ Il nous faut a minima
 
 Voici un parcours accéléré pour faire toutes les installations:
 
-* installation de git
-  * **(Windows seulement)** git for windows (git + bash)
-    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-01-os-terminal-nb.html#installation-de-bash>
+```{admonition} installation de git
+:class: dropdown
+* **(Windows seulement)** git for windows (git + bash)
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-01-os-terminal-nb.html#installation-de-bash>
 
-  * **(tous sauf Windows)** installation git seul
-    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#installation>
+* **(tous sauf Windows)** installation git seul
+  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#installation>
+```
 
 puis ensuite, pour tous les OS
 
-* vs-code
-<https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-editeur-de-code>
+```{admonition} installation de vs-code
+:class: dropdown
 
-* miniconda
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-de-base>
+voir <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-editeur-de-code>
+```
 
-* configuration git
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#setup-git>
+```{admonition} installation de miniconda
+:class: dropdown
+
+voir <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-de-base>
+```
+
+```{admonition} configuration git
+:class: dropdown
+
+voir <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#setup-git>
+```
 
 et pour se servir de tout cela
 
-* cloner le dépôt du cours
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#cloner-le-depot-du-cours>
+```{admonition} cloner le dépôt du cours
+:class: dropdown
 
-* ouvrir les notebooks sur votre ordi
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-local-notebooks-nb.html#notebooks-en-local>
+voir <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#cloner-le-depot-du-cours>
+```
+
+```{admonition} ouvrir les notebooks sur votre ordi
+:class: dropdown
+
+voir <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-local-notebooks-nb.html#notebooks-en-local>
+```
+
