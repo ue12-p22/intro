@@ -10,6 +10,8 @@ tracks:
         notebooks: [ "notebooks/1-*-nb.md" ]
       - name: compléments
         notebooks: [ "notebooks/2-*-nb.md" ]
+      - name: résumé
+        notebooks: [ "notebooks/3-*-nb.md" ]
 
 builds:
   - id: handouts

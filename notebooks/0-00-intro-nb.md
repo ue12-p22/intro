@@ -96,46 +96,6 @@ notez que
 
 +++
 
-## installations
-
-nous verrons pour commencer comment installer notre pile logicielle, à savoir essentiellement
-
-* le terminal - nous utilisons **`bash`**, qui est natif sur les OS linux et MacOS, et qui vient avec le produit `git for windows`
-* l'éditeur de code **VS-code** (Visual Studio Code)
-* **miniconda** pour **Python** (et les environnements virtuels)
-* **Jupyter** pour les notebooks
-  * et accessoirement, *markdown* pour la mise en forme du texte,
-  * et les formules mathématiques en $\LaTeX$
-* **`git`** pour la gestion de versions; c'est un outil super-utile pour le développement, c'est indispensable que vous sachiez l'utiliser
-
-Voici un parcours accéléré pour faire toutes les installations:
-
-* installation de git
-  * **(Windows seulement)** git for windows (git + bash)  
-    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-01-os-terminal-nb.html#installation-de-bash>
-
-  * **(tous sauf Windows)** installation git seul  
-    <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#installation>
-
-puis ensuite, pour tous les OS
-
-* vs-code  
-<https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-editeur-de-code>
-
-* miniconda  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-02-vscode-python-nb.html#installation-de-base>
-
-* configuration git  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#setup-git>
-
-* cloner le dépôt du cours  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-03-git-setup-nb.html#cloner-le-depot-du-cours>
-
-* ouvrir les notebooks sur votre ordi  
-  <https://nbhosting.inria.fr/builds/ue12-p22-intro/handouts/latest/1-04-local-notebooks-nb.html#notebooks-en-local>
-
-+++
-
 ## les supports de cours
 
 le plus souvent, les supports de cours sont fournis **sous forme de notebooks**; ce sont des documents hybrides contenant **du texte** (mis en page grâce à *markdown*) et du **code** directement **exécutable**; on peut également y inclure des équations mathématiques, et des média externes (images, vidéos, sons, ...)
